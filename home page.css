@@ -23,7 +23,7 @@ background-color: #f44336;height: 150px;text-align:center;box-shadow: 0 3px 3px 
 }
 
 nav ul{
-	padding-top:0;list-style-type: none;font-family: AdobeHeitiStd-Regular;width: 80%;
+	padding-top:0;list-style-type: none;font-family: SimHei;width: 80%;
 	background-color: #d32f2f;border-radius: 5px;margin: 80px auto 10px auto;min-width: 1080px;
 
 }
@@ -59,7 +59,7 @@ h1 {border-radius: 10px;
 }
 
 .inner{
-	position: relative;left: 25%;padding-top: 50px;font-family: AdobeHeitiStd-Regular;
+	position: relative;left: 25%;padding-top: 50px;font-family: SimHei;
 }
 #Hobbits p{
 	display: inline-block;margin-right: 80px;width: 25%;max-width: 200px;text-align: center;
