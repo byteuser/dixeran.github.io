@@ -5,7 +5,7 @@
 
 
 #containAll{
-position:fixed;width:400px;height:70%;min-height: 500px;left: 30%;
+position:fixed;width:400px;height:70%;min-height: 600px;left: 30%;
 background-color: #567ebb;border-radius: 5px;
 padding-top: 20px;text-align: center;
 }
