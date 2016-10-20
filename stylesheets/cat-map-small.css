@@ -1,0 +1,41 @@
+@font-face{
+	font-family: RBNo2;
+	src=url('RBNo2Light.otf');
+}
+
+
+#containAll{
+position:fixed;width:100%;height: 100%;left: 0;
+background-color: #567ebb;border-radius: 5px;
+padding-top: 20px;text-align: center;
+}
+
+#container {
+	position: relative;border-radius: 7px;
+	margin-top: 50px;
+	margin-left: 0;
+	width: 100%;
+	height: 70%;
+}
+
+h1{
+	background-color: #dce0e6;z-index: 15;border-radius: 5px;color: #1f1f20;width:300px;height: 40px;
+	position: relative;margin:auto;font-family: RBNo2;font-size: 32px;
+}
+p{
+
+}
+body{
+	width:320px;height:480px;text-align: center;
+}
+#tip {
+	background-color: #fff;
+	position: absolute;
+	
+	font-size: 12px;
+	right: 10px;
+	top: 180px;
+	border-radius: 3px;
+	border: 1px solid #ccc;
+	line-height: 30px;
+}
