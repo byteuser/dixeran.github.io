@@ -3,8 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <title>Link-Evt</title>
+    <script type="text/javascript">
+        if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )
+        {
+            window.location = "mob.html";
+        }
+    </script>
+    <script type="text/javascript" src="javascripts/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="javascripts/login.js"></script>
+    <link href="stylesheets/styles.css" type="text/css" rel="stylesheet">
 </head>
 <body>
-    <a href="mob.html">to the mobile</a>
+    <div id="left-sign-up-container">
+        <div class="padding-left ">
+        <b class="sign-up-list font">SIGN UP</b>
+        <p class="sigh-up-list font">User name:</p>
+        <input type="text" class="sigh-up-list">
+        <p class="sigh-up-list font">Pass word:</p>
+        <input type="password" class="sigh-up-list">
+        <div class="sigh-up-list button font">Submit!</div>
+        </div>
+    </div>
+    <div id="mid-panel-container">
+        <img src="./image/mid-panel.jpg" id="mid-panel-left" height="1080">
+        <img src="./image/mid-panel.jpg" id="mid-panel-right" height="1080">
+        <div id="sign-in-button">
+            <b id="sign-in">SIGN UP/ IN</b>
+        </div>
+    </div>
+    <div id="right-sign-up-container">
+        <div class="padding-right ">
+            <b class="sign-up-list font">SIGN IN</b>
+            <p class="sigh-up-list font">User name:</p>
+            <input type="text" class="sigh-up-list">
+            <p class="sigh-up-list font">Pass word:</p>
+            <input type="password" class="sigh-up-list">
+            <div class="sigh-up-list button font">Submit!</div>
+        </div>
+    </div>
 </body>
 </html>
