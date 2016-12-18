@@ -31,8 +31,12 @@ $(document).ready(function() {
     });
     $(".button").on("mouseout",function () {
         $(".button").css({"backgroundColor":"#ff3c45","color":"#fff"});
-
     });
+
+    $(".button").on("click", function () {
+        window.open("http://python-dixeran.rhcloud.com/");
+
+    })
 
 
 });
