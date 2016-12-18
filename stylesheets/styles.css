@@ -8,7 +8,7 @@
     height: 100%;min-height: 700px;
     margin:0 auto;
     z-index: 20;
-    box-shadow: -3px 0px 8px 3px #232223;
+    box-shadow: -3px 0 8px 3px #232223;
 
 }
 
@@ -17,7 +17,7 @@
     height: 100%;min-height: 700px;
     margin:0 auto;
     z-index: 20;
-    box-shadow: 3px 0px 8px 3px #232223;
+    box-shadow: 3px 0 8px 3px #232223;
 }
 
 #mid-panel-container{
