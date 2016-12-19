@@ -34,9 +34,13 @@ $(document).ready(function() {
     });
 
     $(".button").on("click", function () {
-        window.open("http://python-dixeran.rhcloud.com/");
+        $("#left-sign-up").on("click",function () {
+            var name = $("#sign-up-name");
+            var password = $("#sign-up-password");
+            $.post("python-dixeran.rhcloud.com",{username:name},{password:password});
+        });
+    });
 
-    })
 
 
 });
