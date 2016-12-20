@@ -33,12 +33,10 @@ $(document).ready(function() {
         $(".button").css({"backgroundColor":"#ff3c45","color":"#fff"});
     });
 
-    $(".button").on("click", function () {
-        $("#left-sign-up").on("click",function () {
-            var name = $("#sign-up-name");
-            var password = $("#sign-up-password");
-            $.post("python-dixeran.rhcloud.com",{username:name},{password:password});
-        });
+    $("#left-sign-up").on("click",function () {
+        var name = $("#sign-up-name").val();
+        var password = $("#sign-up-password").val();
+        $.post("python-dixeran.rhcloud.com",{username:name},{password:password});
     });
 
 
