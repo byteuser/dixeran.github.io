@@ -36,7 +36,7 @@ $(document).ready(function() {
     $("#left-sign-up").on("click",function () {
         var name = $("#sign-up-name").val();
         var password = $("#sign-up-password").val();
-        $.post("http://python-dixeran.rhcloud.com/",{username:name, password:password});
+        $.post("https://python-dixeran.rhcloud.com/",{username:name, password:password});
     });
 
 
