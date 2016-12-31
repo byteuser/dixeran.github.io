@@ -36,7 +36,10 @@ $(document).ready(function() {
     $("#left-sign-up").on("click",function () {
         var name = $("#sign-up-name").val();
         var password = $("#sign-up-password").val();
-        $.post("https://python-dixeran.rhcloud.com/",{method:'up',username:name, password:password});
+        $.post("https://python-dixeran.rhcloud.com/",{method:'up',username:name, password:password},function (data) {
+            alert(data);
+            alert('Still working on it...');
+        });
     });
 
     $("#right-sign-in").on("click",function () {
