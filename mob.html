@@ -3,23 +3,35 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <script type="javascript" src="javascripts/ratchet.js"></script>
-    <script type="javascript" src="javascripts/modals.js"></script>
-    <script type="javascript" src="javascripts/push.js"></script>
+    <script src="javascripts/ratchet.js"></script>
 	<link rel="stylesheet" href="stylesheets/ratchet.min.css">
 	<link rel="stylesheet" href="stylesheets/style-mob.css">
 	<title>Link-Evt</title>
 </head>
 <body>
-    <a href="#myModalexample" class="btn">Open modal</a>
-    <div id="myModalexample" class="modal">
-        <header class="bar bar-nav">
-            <a class="icon icon-close pull-right" href="#myModalexample"></a>
-            <h1 class="title">Modal</h1>
-        </header>
+    <header class="bar bar-nav">
+        <img src="favicon.ico" id="LOGO">
+        <h1 class="title">Link-Evt</h1>
+    </header>
+    <div class="slider" id="mySlider">
+        <div class="slide-group">
+            <div class="slide">
+                <div>
+                    <h3>Sign in</h3>
 
-        <div class="content">
-            <p class="content-padded">The contents of my modal go here. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
+                        <input type="text" placeholder="Full name">
+                        <input type="search" placeholder="Search">
+                        <textarea rows="5"></textarea>
+                        <button class="btn btn-positive btn-block">Choose existing</button>
+
+                </div>
+            </div>
+            <div class="slide">
+                <a href="">haha</a>
+            </div>
+            <div class="slide">
+                <a href="">haha</a>
+            </div>
         </div>
     </div>
 </body>
