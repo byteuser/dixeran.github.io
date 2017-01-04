@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <script src="javascripts/ratchet.js"></script>
+    <script src="javascripts/Login-mob.js"></script>
 	<link rel="stylesheet" href="stylesheets/ratchet.min.css">
 	<link rel="stylesheet" href="stylesheets/style-mob.css">
 	<title>Link-Evt</title>
@@ -12,26 +13,37 @@
     <header class="bar bar-nav">
         <img src="favicon.ico" id="LOGO">
         <h1 class="title">Link-Evt</h1>
+        <a href="#about" class="btn pull-right">About</a>
     </header>
     <div class="slider" id="mySlider">
         <div class="slide-group">
             <div class="slide">
                 <div>
                     <h3>Sign in</h3>
-
-                        <input type="text" placeholder="Full name">
-                        <input type="search" placeholder="Search">
-                        <textarea rows="5"></textarea>
+                        <input type="text" placeholder="Username">
+                        <input type="text" placeholder="Password">
                         <button class="btn btn-positive btn-block">Choose existing</button>
-
                 </div>
             </div>
             <div class="slide">
-                <a href="">haha</a>
+                <a href="">A silly-cat found..</a>
             </div>
             <div class="slide">
-                <a href="">haha</a>
+                <a href="">A silly-cat found..</a>
             </div>
+        </div>
+    </div>
+    <div id="about" class="modal">
+        <header class="bar bar-nav">
+            <a class="btn pull-right" href="#about">Back</a>
+            <h1 class="title">About</h1>
+        </header>
+
+        <div class="content">
+            <p class="content-padded">
+                <div>Link-Evt是一个还在疯狂迭代的小工具,</div>
+                <div>UI powred by: Ratchet</div>
+            </p>
         </div>
     </div>
 </body>

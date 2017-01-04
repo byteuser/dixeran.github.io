@@ -7,10 +7,13 @@
 
 input{
     display: block;
-    margin: 0 auto;
+    margin: 30px auto;
 }
 
 #LOGO{
     width:32px;height: 32px;
     float: left;margin: 3px 30%;
+}
+#about{
+    text-align: center;
 }
