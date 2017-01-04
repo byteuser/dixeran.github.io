@@ -2,18 +2,24 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta content=”initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width” name=”viewport” />
-	<script type="text/javascript" src="javascripts/jquery-3.1.1.min.js"></script>
-	<link href="https://cdn.amazeui.org/amazeui/2.7.2/css/amazeui.min.css" type="text/css" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <script type="javascript" src="javascripts/ratchet.js"></script>
+    <script type="javascript" src="javascripts/modals.js"></script>
+	<link rel="stylesheet" href="stylesheets/ratchet.min.css">
+	<link rel="stylesheet" href="stylesheets/style-mob.css">
 	<title>Link-Evt</title>
 </head>
 <body>
-	<div>
-		<ul class="am-nav am-nav-pills">
-			<li class="am-active"><a href="#">Sign in</a></li>
-			<li><a href="#">Sign-up</a></li>
-			<li><a href="#">About me</a></li>
-		</ul>
-	</div>
+    <a href="#myModalexample" class="btn">Open modal</a>
+    <div id="myModalexample" class="modal">
+        <header class="bar bar-nav">
+            <a class="icon icon-close pull-right" href="#myModalexample"></a>
+            <h1 class="title">Modal</h1>
+        </header>
+
+        <div class="content">
+            <p class="content-padded">The contents of my modal go here. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
+        </div>
+    </div>
 </body>
 </html>
