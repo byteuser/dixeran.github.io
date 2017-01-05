@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <script type="text/javascript" src="javascripts/jquery-3.1.1.min.js"></script>
     <script src="javascripts/ratchet.js"></script>
     <script src="javascripts/Login-mob.js"></script>
 	<link rel="stylesheet" href="stylesheets/ratchet.min.css">
@@ -19,17 +20,21 @@
         <div class="slide-group">
             <div class="slide">
                 <div>
-                    <h3>Sign in</h3>
-                        <input type="text" placeholder="Username">
-                        <input type="text" placeholder="Password">
-                        <button class="btn btn-positive btn-block">Choose existing</button>
+                    <h3>SIGN IN</h3><span class="icon icon-right-nav"></span>
+                    <input type="text" placeholder="Username" id="sign-in-name">
+                    <input type="text" placeholder="Password" id="sign-in-password">
+                    <button class="btn btn-positive btn-block" id="sign-in-button">SUBMIT</button>
+                    <h4>Newcomer?</h4>
+                    <p>Swipe to sign up :)</p>
                 </div>
             </div>
             <div class="slide">
-                <a href="">A silly-cat found..</a>
-            </div>
-            <div class="slide">
-                <a href="">A silly-cat found..</a>
+                <div>
+                    <h3>SIGN UP</h3><span class="icon icon-right-nav"></span>
+                    <input type="text" placeholder="Username" id="sign-up-name">
+                    <input type="text" placeholder="Password" id="sign-up-password">
+                    <button class="btn btn-positive btn-block" id="sign-up-button">SUBMIT TO SIGN UP !</button>
+                </div>
             </div>
         </div>
     </div>
@@ -38,7 +43,6 @@
             <a class="btn pull-right" href="#about">Back</a>
             <h1 class="title">About</h1>
         </header>
-
         <div class="content">
             <p class="content-padded">
                 <div>Link-Evt是一个还在疯狂迭代的小工具,</div>
