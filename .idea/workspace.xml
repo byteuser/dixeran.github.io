@@ -56,8 +56,8 @@
       <file leaf-file-name="mob.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mob.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="10" column="51" lean-forward="false" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
+            <state relative-caret-position="84">
+              <caret line="4" column="58" lean-forward="false" selection-start-line="4" selection-start-column="58" selection-end-line="4" selection-end-column="58" />
               <folding />
             </state>
           </provider>
@@ -370,12 +370,12 @@
       <workItem from="1483184898129" duration="2767000" />
       <workItem from="1483362842861" duration="1604000" />
       <workItem from="1483517670795" duration="16494000" />
-      <workItem from="1483610668609" duration="4636000" />
+      <workItem from="1483610668609" duration="4827000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78324000" />
+    <option name="totallyTimeSpent" value="78515000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -738,7 +738,7 @@
         <state relative-caret-position="21">
           <caret line="137" column="35" lean-forward="false" selection-start-line="137" selection-start-column="35" selection-end-line="137" selection-end-column="35" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -748,7 +748,7 @@
         <state relative-caret-position="21">
           <caret line="53" column="40" lean-forward="false" selection-start-line="53" selection-start-column="40" selection-end-line="53" selection-end-column="40" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -797,8 +797,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mob.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="51" lean-forward="false" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
+        <state relative-caret-position="84">
+          <caret line="4" column="58" lean-forward="false" selection-start-line="4" selection-start-column="58" selection-end-line="4" selection-end-column="58" />
           <folding />
         </state>
       </provider>
