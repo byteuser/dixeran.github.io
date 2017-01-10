@@ -9,9 +9,7 @@ $(document).ready(function() {
         alert(data);
         if(data == '登陆成功')
         {
-            $.post("https://python-dixeran.rhcloud.com/",{method:'code',username:name, password:password},function (decode) {
-                window.location.href = 'zone.html'
-            })
+            window.location.href = 'zone.html';
         }
     });
 
