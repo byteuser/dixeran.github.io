@@ -3,6 +3,17 @@
  */
 
 $(document).ready(function() {
+    var inname = $.cookie('name');
+    var inpsd = $.cookie('password');
+    $.post("https://python-dixeran.rhcloud.com/",{method:'in',username:inname, password:inpsd},function (data) {
+        alert(data);
+        if(data == '登陆成功')
+        {
+            $.post("https://python-dixeran.rhcloud.com/",{method:'code',username:name, password:password},function (decode) {
+                window.location.href = 'zone.html'
+            })
+        }
+    });
 
     $("#sign-in-button").on("click", function () {
         $("#left-sign-up-container").fadeIn(100);
