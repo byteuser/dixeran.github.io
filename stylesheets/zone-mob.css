@@ -6,3 +6,42 @@
 .table-view{
     margin-top: 0 !important;
 }
+
+#add{
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    padding-top: 13px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px grey;
+    z-index: 100;
+    position: fixed;
+    right:15px;
+    bottom: 15px;
+}
+
+.icon-plus{
+    font-size: 30px !important;
+}
+
+.modal{
+    z-index: 200;
+}
+
+form{
+    margin:10px 5px;
+}
+
+#logout{
+    color: white;
+    display: none;
+    position: fixed;
+    width: 72px;
+    height:18px;
+    border-radius: 3px;
+    box-shadow: 0 0 10px grey;
+    bottom: 32px;
+    right:90px;
+    background-color: whitesmoke;
+    opacity: 0.8;
+}
