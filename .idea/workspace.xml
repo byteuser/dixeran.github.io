@@ -87,7 +87,7 @@
         <entry file="file://$PROJECT_DIR$/javascripts/zone-mob.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="189">
-              <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+              <caret line="9" column="69" lean-forward="true" selection-start-line="9" selection-start-column="69" selection-end-line="9" selection-end-column="69" />
               <folding />
             </state>
           </provider>
@@ -392,12 +392,12 @@
       <workItem from="1484274821802" duration="4668000" />
       <workItem from="1484279583399" duration="2262000" />
       <workItem from="1484299313137" duration="7258000" />
-      <workItem from="1484402885922" duration="2388000" />
+      <workItem from="1484402885922" duration="2599000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="105380000" />
+    <option name="totallyTimeSpent" value="105591000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -793,7 +793,7 @@
     <entry file="file://$PROJECT_DIR$/javascripts/zone-mob.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
-          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+          <caret line="9" column="69" lean-forward="true" selection-start-line="9" selection-start-column="69" selection-end-line="9" selection-end-column="69" />
           <folding />
         </state>
       </provider>
