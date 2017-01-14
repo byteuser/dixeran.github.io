@@ -6,6 +6,7 @@ $(document).ready(function () {
         $('#logout').toggle(300);
         if($('#add').css('background-color') == '#368CBF') {
             $('#add').css({'background-color': '#D63932', 'border-color': '#D63932'});
+        }
         if($('#add').css('background-color') == '#D63932') {
             $('#add').css({'background-color': '#368CBF', 'border-color': '#368CBF'});
         }
