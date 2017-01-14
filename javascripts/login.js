@@ -9,7 +9,7 @@ $(document).ready(function() {
         alert(data);
         if(data == '登陆成功')
         {
-            window.location.href = 'zone.html';
+            window.location.href = 'zone-mob.html';
         }
     });
 
