@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="badc3dda-dbba-4db6-a94e-2ceb9085745b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/styles.css" afterPath="$PROJECT_DIR$/stylesheets/styles.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascripts/Login-mob.js" afterPath="$PROJECT_DIR$/javascripts/Login-mob.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascripts/login.js" afterPath="$PROJECT_DIR$/javascripts/login.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -26,8 +27,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="15" column="7" lean-forward="false" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+            <state relative-caret-position="168">
+              <caret line="8" column="1" lean-forward="false" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -43,11 +44,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="styles.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="styles.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/stylesheets/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="8" column="18" lean-forward="true" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+            <state relative-caret-position="210">
+              <caret line="10" column="7" lean-forward="false" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -93,11 +94,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Login-mob.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Login-mob.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/javascripts/Login-mob.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="11" column="30" lean-forward="false" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+            <state relative-caret-position="609">
+              <caret line="29" column="13" lean-forward="true" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -106,8 +107,8 @@
       <file leaf-file-name="login.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/javascripts/login.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="18" column="7" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+            <state relative-caret-position="527">
+              <caret line="62" column="41" lean-forward="true" selection-start-line="62" selection-start-column="41" selection-end-line="62" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -133,6 +134,7 @@
       <find>font</find>
       <find>container</find>
       <find>geteleme</find>
+      <find>zone</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -144,8 +146,6 @@
         <option value="$PROJECT_DIR$/javascripts/amazeui.css" />
         <option value="$PROJECT_DIR$/stylesheets/ratchet.min.css" />
         <option value="$PROJECT_DIR$/stylesheets/style-mob.css" />
-        <option value="$PROJECT_DIR$/javascripts/login.js" />
-        <option value="$PROJECT_DIR$/javascripts/Login-mob.js" />
         <option value="$PROJECT_DIR$/mob.html" />
         <option value="$PROJECT_DIR$/zone.html" />
         <option value="$PROJECT_DIR$/javascripts/push.js" />
@@ -155,6 +155,8 @@
         <option value="$PROJECT_DIR$/zone-mob.html" />
         <option value="$PROJECT_DIR$/javascripts/zone-mob.js" />
         <option value="$PROJECT_DIR$/stylesheets/styles.css" />
+        <option value="$PROJECT_DIR$/javascripts/login.js" />
+        <option value="$PROJECT_DIR$/javascripts/Login-mob.js" />
       </list>
     </option>
   </component>
@@ -391,12 +393,12 @@
       <workItem from="1484274821802" duration="4668000" />
       <workItem from="1484279583399" duration="2262000" />
       <workItem from="1484299313137" duration="7258000" />
-      <workItem from="1484402885922" duration="1143000" />
+      <workItem from="1484402885922" duration="1529000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="104135000" />
+    <option name="totallyTimeSpent" value="104521000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -733,14 +735,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="15" column="7" lean-forward="false" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/details-mob.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
@@ -765,22 +759,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/javascripts/Login-mob.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="30" lean-forward="false" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javascripts/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="18" column="7" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/javascripts/zone-mob.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -791,8 +769,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/stylesheets/styles.css">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="7" lean-forward="false" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
-          <caret line="8" column="18" lean-forward="true" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+          <caret line="8" column="1" lean-forward="false" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascripts/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="62" column="41" lean-forward="true" selection-start-line="62" selection-start-column="41" selection-end-line="62" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascripts/Login-mob.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="609">
+          <caret line="29" column="13" lean-forward="true" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
           <folding />
         </state>
       </provider>

@@ -9,7 +9,7 @@ $(document).ready(function () {
         alert(data);
         if(data == '登陆成功')
         {
-            window.location.href = 'zone.html';
+            window.location.href = 'zone-mob.html';
         }
     });
 
@@ -25,7 +25,7 @@ $(document).ready(function () {
                     $.cookie('name',name,{expires:7});
                     $.cookie('password',password,{expires:7});
                     $.cookie('code',decode,{expires:7});
-                    window.location.href = 'zone.html'
+                    window.location.href = 'zone-mob.html'
                 })
             }
         });
