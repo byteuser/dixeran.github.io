@@ -4,11 +4,11 @@
 $(document).ready(function () {
     $('#settings').on('click',function () {
         $('#logout').toggle(300);
-        if($('#add').css('background-color') == '#368CBF') {
+        if($('#add').css('background-color') == 'rgb(66, 139, 202)') {
             $('#add').css({'background-color': '#D63932', 'border-color': '#D63932'});
         }
-        if($('#add').css('background-color') == '#D63932') {
-            $('#add').css({'background-color': '#368CBF', 'border-color': '#368CBF'});
+        else if($('#add').css('background-color') == 'rgb(214, 57, 50)') {
+            $('#add').css({'background-color': 'rgb(66, 139, 202)', 'border-color': 'rgb(66, 139, 202)'});
         }
     });
 });
