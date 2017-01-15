@@ -18,6 +18,11 @@
     position: fixed;
     right:15px;
     bottom: 15px;
+    text-indent: 0;
+}
+
+#add-img{
+    max-width: 100px;
 }
 
 .icon-plus{
