@@ -2,6 +2,11 @@
  * Created by lenovo on 2017/1/13.
  */
 $(document).ready(function () {
+    if($.cookie('code') == '0'||$.cookie('code') == null)
+    {
+        alert('请先登录！');
+        window.location.href = 'index.html';
+    }
     $('#settings').on('click',function () {
         $('#logout').toggle(300);
         if($('#add').css('background-color') == 'rgb(66, 139, 202)') {
