@@ -22,4 +22,11 @@ $(document).ready(function () {
             },duration:'fast'},'swing')
         }
     });
+    $('#add-save').on('click',function () {
+        if($('#add').css('background-color') == 'rgb(214, 57, 50)')
+        {
+            $.cookie('code',null);
+            window.location.href = 'index.html';
+        }
+    });
 });
