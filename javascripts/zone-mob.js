@@ -19,7 +19,7 @@ $(document).ready(function () {
             $('#add').css({'background-color': 'rgb(66, 139, 202)', 'border-color': 'rgb(66, 139, 202)'});
             $('#add-img').animate({maxWidth:190},{step:function (now) {
                 $('#add-img').css('transform','rotate('+(now-100)+'deg)')
-            },duration:'fast'},'swing')
+            },duration:'fast'},'swing');
         }
     });
     $('#add').on('click',function () {
@@ -30,5 +30,8 @@ $(document).ready(function () {
             $.cookie('password',null,{expires:7});
             window.location.href = 'index.html';
         }
+    });
+    $('#add-save').on('click',function () {
+        $.post("https://python-dixeran.rhcloud.com/insert",{code:$.cookie('code'),things:$('#todo-text').val()});
     });
 });
