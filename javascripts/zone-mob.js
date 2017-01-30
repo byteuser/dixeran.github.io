@@ -32,6 +32,8 @@ $(document).ready(function () {
         }
     });
     $('#add-save').on('click',function () {
-        $.post("https://python-dixeran.rhcloud.com/insert",{code:$.cookie('code'),things:$('#todo-text').val()});
+        $.post("https://python-dixeran.rhcloud.com/insert",{code:$.cookie('code'),things:$('#todo-text').val()}, function () {
+            window.location.href = 'zone-mob.html';
+        });
     });
 });
