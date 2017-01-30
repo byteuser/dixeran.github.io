@@ -22,10 +22,12 @@ $(document).ready(function () {
             },duration:'fast'},'swing')
         }
     });
-    $('#add-save').on('click',function () {
+    $('#add').on('click',function () {
         if($('#add').css('background-color') == 'rgb(214, 57, 50)')
         {
-            $.cookie('code',null);
+            $.cookie('code',null,{expires:7});
+            $.cookie('name',null,{expires:7});
+            $.cookie('password',null,{expires:7});
             window.location.href = 'index.html';
         }
     });

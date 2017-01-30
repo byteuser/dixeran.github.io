@@ -13,6 +13,13 @@ $(document).ready(function() {
         }
     });
 
+    var today = new Date();
+    var hour = today.getHours();
+    var num = Math.floor(hour/4) + 1;
+    $('#mid-panel-left').attr('src',"image/mid-panel ("+ num + ").jpg");
+    $('#mid-panel-right').attr('src',"image/mid-panel ("+ num + ").jpg");
+    $('#mid-panel-container').css('backgroundImage','url("./image/mid-panel('+ num + ')-bk.jpg")');
+
     $("#sign-in-button").on("click", function () {
         $("#left-sign-up-container").fadeIn(100);
         $("#right-sign-up-container").fadeIn(100);

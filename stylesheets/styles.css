@@ -3,12 +3,23 @@
     src: url("../RBNo2Light.otf");
 }
 
+#keyWord{
+    position: relative;
+    top: 25%;
+    z-index: 100;
+    color: white;
+    font-family: Microsoft YaHei;
+    font-size: 80px;
+    margin: 0 auto;
+    font-weight: 500;
+}
+
 #mid-panel-left{
     position: absolute;left: 0;right: 0;top:-2px;bottom:0;
     height: 100%;min-height: 700px;
     margin:0 auto;
     z-index: 20;
-    box-shadow: -3px 0 8px 3px #232223;
+    box-shadow: 0 0 20px#232223;
 
 }
 
@@ -17,14 +28,14 @@
     height: 100%;min-height: 700px;
     margin:0 auto;
     z-index: 20;
-    box-shadow: 3px 0 8px 3px #232223;
+    box-shadow: 0 0 20px #232223;
 }
 
 #mid-panel-container{
     position: relative;
     text-align: center;
     height:100%;min-height: 700px;
-    background-image:url("../image/seigaiha.png");
+    background-image:url('/123.jpg');
 }
 
 html{
@@ -40,7 +51,7 @@ body{
     display:inline-block;
     position: absolute;
     padding:15px 0;
-    top:70%;
+    top:75%;
     height:35px;
     width:220px;
     z-index: 30;
@@ -56,7 +67,6 @@ body{
 }
 
 #left-sign-up-container{
-    background-color: #38384A;
     position: absolute;
     display: none;
     z-index: 15;
@@ -69,7 +79,6 @@ body{
 #right-sign-up-container{
     position: absolute;top:0;
     left:60%;
-    background-color: #717185;
     z-index: 18;
     display: none;
     width:40%;
