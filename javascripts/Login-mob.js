@@ -11,8 +11,8 @@ $(document).ready(function () {
             username: inname,
             password: inpsd
         }, function (data) {
-            myApp.alert(data, '登陆消息');
             if (data == '登陆成功') {
+                myApp.alert(data, '登陆消息');
                 mainView.router.loadPage('zone-mob.html');
             }
         });
