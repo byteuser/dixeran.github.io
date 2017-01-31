@@ -1,59 +1,170 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-	<meta charset="UTF-8">
-    <meta name="apple-mobile-web-app-capable" content="yes"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <script type="text/javascript" src="javascripts/jquery-3.1.1.min.js"></script>
-    <script src="javascripts/ratchet.js"></script>
-    <script src="javascripts/Login-mob.js"></script>
-    <script src="javascripts/jquery.cookie.js"></script>
-	<link rel="stylesheet" href="stylesheets/ratchet.min.css">
-	<link rel="stylesheet" href="stylesheets/style-mob.css">
-    <link rel="apple-touch-icon" href="favicon1.ico"/>
-	<title>Starry 星空阅读</title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no,
+          initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,
+          minimal-ui">
+    <meta name="theme-color" content="#3f51b5">
+    <link rel="stylesheet" href="stylesheets/framework7.material.min.css">
+    <link rel="stylesheet" href="stylesheets/framework7.material.colors.min.css">
+    <link rel="stylesheet" href="stylesheets/material-icons.css">
+    <link rel="stylesheet" href="stylesheets/style-mob.css">
+    <title>Starry</title>
 </head>
-<body>
-    <header class="bar bar-nav">
-        <img src="favicon.ico" id="LOGO">
-        <h1 class="title">STARRY</h1>
-        <a href="#about" class="btn pull-right">About</a>
-    </header>
-    <div class="slider" id="mySlider">
-        <div class="slide-group">
-            <div class="slide">
-                <div>
-                    <h3>SIGN IN</h3><span class="icon icon-right-nav"></span>
-                    <input type="text" placeholder="Username" id="sign-in-name">
-                    <input type="password" placeholder="Password" id="sign-in-password">
-                    <button class="btn btn-positive btn-block" id="sign-in-button">SUBMIT</button>
-                    <h4>Newcomer?</h4>
-                    <p>Swipe to sign up :)</p>
+<body class="theme-indigo">
+    <div class="views">
+        <div class="view view-main">
+            <div class="pages navbar-fixed toolbar-fixed">
+
+                <!--Main page.-->
+                <div class="page" data-page="index">
+                    <!-- navbar-->
+                    <div class="navbar">
+                        <div class="navbar-inner">
+                            <div class="center">STARRY</div>
+                            <div class="right"><img src="favicon.ico" id="logo"></div>
+                        </div>
+                    </div>
+                    <!-- Bottom Toolbar.-->
+                    <div class="toolbar">
+                        <div class="toolbar-inner">
+                            <a href="#about" class="link">ABOUT</a>
+                            <a href="#signup" class="link">
+                                <i class="material-icons">control_point</i>
+                                <span>SIGN UP</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!--Contents-->
+                    <div class="page-content">
+                        <p></p>
+                        <div class="login-screen-title">SIGN IN</div>
+                        <!-- Sign in form -->
+                        <form>
+                            <div class="list-block">
+                                <ul>
+                                    <li class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-title label">Username</div>
+                                            <div class="item-input">
+                                                <input type="text" name="username" placeholder="Username" id="sign-in-name">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-title label">Password</div>
+                                            <div class="item-input">
+                                                <input type="password" name="password" placeholder="Password" id="sign-in-password">
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="list-block">
+                                <ul>
+                                    <li>
+                                        <a href="#" class="item-link list-button" id="sign-in-button">
+                                            <span>SUBMIT&nbsp;&nbsp;</span>
+                                            <i class="material-icons">done</i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-            </div>
-            <div class="slide">
-                <div>
-                    <h3>SIGN UP</h3><span class="icon icon-right-nav"></span>
-                    <input type="text" placeholder="Username" id="sign-up-name">
-                    <input type="text" placeholder="Password" id="sign-up-password">
-                    <button class="btn btn-positive btn-block" id="sign-up-button">SUBMIT TO SIGN UP !</button>
-                    <h4>Finished ?</h4>
-                    <p>Swipe back sign in :)</p>
+
+                <!-- About page. -->
+                <div class="page cached" data-page="about">
+                    <!-- navbar-->
+                    <div class="navbar">
+                        <div class="navbar-inner">
+                            <div class="left">
+                                <a href="#index" class="back link">
+                                    <i class="icon icon-back"></i>
+                                    <span>Back</span>
+                                </a>
+                            </div>
+                            <div class="right">ABOUT STARRY&nbsp;&nbsp;</div>
+                        </div>
+                    </div>
+                    <div class="page-content">
+                        <div class="content-block-title">STARRY</div>
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="card-content-inner">星海拾遗</div>
+                            </div>
+                        </div>
+                        <div class="content-block-title">Powered by:</div>
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="card-content-inner">
+                                    <p>STARRY-mobile is powered by Framework7</p>
+                                    <p>But, unfortunately, still include JQuery</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Signup page-->
+                <div class="page cached" data-page="signup">
+                    <!-- navbar-->
+                    <div class="navbar">
+                        <div class="navbar-inner">
+                            <div class="left">
+                                <a href="#index" class="back link">
+                                    <i class="icon icon-back"></i>
+                                    <span>Back</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- page-content has additional login-screen content -->
+                    <div class="page-content ">
+                        <div class="login-screen-title">Sign Up to STARRY</div>
+                        <!-- Login form -->
+                        <form>
+                            <div class="list-block">
+                                <ul>
+                                    <li class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-title label">Username</div>
+                                            <div class="item-input">
+                                                <input type="text" name="username" placeholder="Username"id="sign-up-name">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-title label">Password</div>
+                                            <div class="item-input">
+                                                <input type="password" name="password" placeholder="Password" id="sign-up-password">
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="list-block">
+                                <ul>
+                                    <li>
+                                        <a href="#" class="item-link list-button" id="#sign-up-button">SIGN UP</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <div id="about" class="modal">
-        <header class="bar bar-nav">
-            <a class="btn pull-right" href="#about">Back</a>
-            <h1 class="title">About</h1>
-        </header>
-        <div class="content">
-            <p class="content-padded">
-                <div>Link-Evt是一个还在疯狂迭代的小工具,</div>
-                <div>UI powered by: Ratchet</div>
-            </p>
-        </div>
-    </div>
+    <script src="javascripts/framework7.js"></script>
+    <script src="javascripts/jquery-3.1.1.min.js"></script>
+    <script src="javascripts/jquery.cookie.js"></script>
+    <script src="javascripts/Login-mob.js"></script>
+    <script src="javascripts/my-app.js"></script>
 </body>
 </html>

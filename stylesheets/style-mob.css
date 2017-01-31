@@ -1,48 +1,6 @@
-.slider{
-    background-color: white;
-    width:90%;
-    text-align: left;
-    margin: 100px auto;
-}
-
-.slide{
-    padding: 0 3px;
-}
-
-input{
-    display: block;
-    margin: 30px auto;
-}
-
-#LOGO{
-    width:32px;height: 32px;
-    float: left;margin: 3px 30%;
-}
-#about{
-    text-align: center;
-}
-
-#fat{
-    width: 40%;
-    height: 40%;
-    max-width: 200px;
-    max-height:200px;
-}
-
-h3{
-    color: #33363B;
-    display: inline-block;
-}
-
-#sign-up-button{
-    background-color: #368CBF;
-    border-color: #368CBF;
-}
-
-.button{
-    margin-top: 10px;
-}
-
-h4{
-    color: #7b797a;
+#logo{
+    height:35px;
+    width:35px;
+    margin-right: 13px;
+    -webkit-filter:invert(100%);
 }
