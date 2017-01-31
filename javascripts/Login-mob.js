@@ -6,10 +6,10 @@ $(document).ready(function () {
     var inname = $.cookie('name');
     var inpsd = $.cookie('password');
     $.post("https://python-dixeran.rhcloud.com/",{ method:'in',username:inname, password:inpsd},function (data) {
-        alert(data);
+        myApp.alert(data, '登陆消息');
         if(data == '登陆成功')
         {
-            window.location.href = 'zone-mob.html';
+            mainView.router.loadPage('zone-mob.html');
         }
     });
 
@@ -18,14 +18,14 @@ $(document).ready(function () {
         var name = $("#sign-in-name").val();
         var password = $("#sign-in-password").val();
         $.post("https://python-dixeran.rhcloud.com/",{method:'in',username:name, password:password},function (data) {
-            alert(data);
+            myApp.alert(data);
             if(data == '登陆成功')
             {
                 $.post("https://python-dixeran.rhcloud.com/",{method:'code',username:name, password:password},function (decode) {
                     $.cookie('name',name,{expires:7});
                     $.cookie('password',password,{expires:7});
                     $.cookie('code',decode,{expires:7});
-                    window.location.href = 'zone-mob.html'
+                    mainView.router.loadPage('zone-mob.html');
                 })
             }
         });
@@ -34,7 +34,7 @@ $(document).ready(function () {
         var name = $("#sign-up-name").val();
         var password = $("#sign-up-password").val();
         $.post("https://python-dixeran.rhcloud.com/",{method:'up',username:name, password:password},function (data) {
-            alert(data+'\n阔以登陆啦');
+            myApp.alert(data+'\n阔以登陆啦','登陆消息');
         });
     })
 });

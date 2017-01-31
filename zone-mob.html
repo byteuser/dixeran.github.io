@@ -1,47 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>List-Evt</title>
-    <meta charset="UTF-8">
-    <meta name="apple-mobile-web-app-capable" content="yes"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <script type="text/javascript" src="javascripts/jquery-3.1.1.min.js"></script>
-    <script src="javascripts/ratchet.js"></script>
-    <script src="javascripts/push.js"></script>
-    <script src="javascripts/jquery.cookie.js"></script>
-    <script src="javascripts/zone-mob.js"></script>
-    <link rel="stylesheet" href="stylesheets/ratchet.min.css">
-    <link rel="stylesheet" href="stylesheets/zone-mob.css">
-    <link rel="apple-touch-icon" href="favicon1.ico"/>
-</head>
 <body>
-    <header class="bar bar-nav">
-        <img src="favicon.ico" id="LOGO">
-        <a class="icon icon-bars pull-right" id="settings" data-ignore="push"></a>
-        <h1 class="title">Link-Evt</h1>
-    </header>
-    <div class="content">
-        <ul id="main-todo" class="table-view">
-            <li class="table-view-divider">todo</li>
-            <li class="table-view-cell">
-                <a href="details-mob.html" data-transition="slide-in" class="navigate-right">detalis</a>
-            </li>
-        </ul>
-        <div id="logout"><p>LOG OUT?</p></div>
-        <a class="btn btn-primary" id="add" href="#addup"><span class="icon icon-plus" id="add-img"></span></a>
-    </div>
-    <div id="addup" class="modal">
-        <header class="bar bar-nav">
-            <a class="icon icon-close pull-right" href="#addup"></a>
-            <h1 class="title">Modal</h1>
-        </header>
+    <div class="page navbar-fixed toolbar-fixed" data-page="zone">
+        <!-- navbar-->
+        <div class="navbar">
+            <div class="navbar-inner">
+                <div class="center">STARRY</div>
+                <div class="right">
+                    <a href="#" class="link iocn-only open-panel" data-panel="right">
+                        <i class="material-icons">view_headline</i>
+                    </a>
+                </div>
+            </div>
+        </div>
 
-        <div class="content">
-            <form>
-                <textarea rows="5" placeholder="What to do next?" id="todo-text"></textarea>
-                <button class="btn btn-positive btn-block" id="add-save">ADD and SAVE !</button>
-            </form>
+        <!-- Page content-->
+        <div class="page-content">
+            <div class="content-block-title">To be finished</div>
+            <div class="list-block">
+                <ul>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-inner">
+                                <div class="item-title">First item.</div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </body>
-</html>
