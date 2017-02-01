@@ -18,7 +18,6 @@ $(document).ready(function () {
         });
     }
 
-
     $('#sign-in-button').on('click',function () {
         var name = $("#sign-in-name").val();
         var password = $("#sign-in-password").val();
@@ -41,5 +40,5 @@ $(document).ready(function () {
         $.post("https://python-dixeran.rhcloud.com/",{method:'up',username:name, password:password},function (data) {
             myApp.alert(data+'\n阔以登陆啦','登陆消息');
         });
-    })
+    });
 });

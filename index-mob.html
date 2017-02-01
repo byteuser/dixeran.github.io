@@ -102,8 +102,9 @@
                         <div class="card">
                             <div class="card-content">
                                 <div class="card-content-inner">
-                                    <p>STARRY-mobile is powered by Framework7</p>
-                                    <p>But, unfortunately, still include JQuery</p>
+                                    <p>STARRY-mobile is powered by Framework7.</p>
+                                    <p>But, unfortunately, still include JQuery.</p>
+                                    <p>Using device that smaller than iPhone5 may cause problems.</p>
                                 </div>
                             </div>
                         </div>
@@ -174,6 +175,73 @@
                 <span>&nbsp;&nbsp;Settings</span>
             </p>
             <p><a href="#" class="button" id="sign-out">Sign Out</a></p>
+        </div>
+    </div>
+    <!--Pop up-->
+    <div class="popover popover-add">
+        <div class="content-block ">
+            <div class="content-block-title">Add a book</div>
+            <form>
+                <div class="list-block">
+                    <ul>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media">
+                                    <i class="material-icons">book</i>
+                                </div>
+                                <div class="item-inner">
+                                    <div class="item-input input-field">
+                                        <input type="text" placeholder="Book name" id="bookname">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media">
+                                    <i class="material-icons">functions</i>
+                                </div>
+                                <div class="item-inner">
+                                    <div class="item-input input-field">
+                                        <input type="text" placeholder="The number of pages" id="bookpageall">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media">
+                                    <i class="material-icons">playlist_add_check</i>
+                                </div>
+                                <div class="item-inner">
+                                    <div class="item-title label">Started?</div>
+                                    <div class="item-input">
+                                        <label class="label-switch">
+                                            <input type="checkbox"><div class="checkbox" id="bookstate"></div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media">
+                                    <i class="material-icons">collections_bookmark</i>
+                                </div>
+                                <div class="item-inner">
+                                    <div class="item-input input-field">
+                                        <input type="text" placeholder="Reading progress" id="bookpagenow" class="disabled">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <p class="buttons-row">
+                        <a href="#" class="button button-raised close-popover">Cancel</a>
+                        <a href="#" class="button button-raised button-fill" id="book-add-submit">Submit</a>
+                    </p>
+                </div>
+            </form>
         </div>
     </div>
 </body>
