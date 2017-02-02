@@ -4,3 +4,9 @@
     margin-right: 13px;
     -webkit-filter:invert(100%);
 }
+
+.readprocess{
+    color: #0c82df;
+    margin-left: 100px;
+    font-size: 12px;
+}
