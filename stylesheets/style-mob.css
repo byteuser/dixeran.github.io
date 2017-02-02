@@ -7,6 +7,20 @@
 
 .readprocess{
     color: #0c82df;
-    margin-left: 100px;
+    width: 60px;
     font-size: 12px;
+}
+
+.list-block ul:after{
+    display: none;
+}
+
+ul .accordion-item .bookname{
+    width: 65%;
+    display: inline-block;
+    overflow: hidden;
+}
+
+ul li .item-title{
+    width: 90%;
 }

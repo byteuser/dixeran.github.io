@@ -9,6 +9,8 @@ var mainView = myApp.addView('.view-main',{
     domCache: true
 });
 
+var listBody;
+
 myApp.onPageBeforeInit('zone',function (page) {
     function showList(listData) {
         var list = $.parseJSON(listData);
@@ -24,11 +26,20 @@ myApp.onPageBeforeInit('zone',function (page) {
         }
         for(var t = 0;t<list.length;t++)
         {
-            var pagenow = list[t][5];
-            var pageall = list[t][6];
-            var progress = (pagenow/pageall)*100;
-            myApp.showProgressbar('#processbar' + t,progress);
+            if(list[t][2] == 1)
+            {
+                var pagenow = list[t][5];
+                var pageall = list[t][6];
+                var progress = (pagenow/pageall)*100;
+                myApp.showProgressbar('#processbar' + t,progress);
+            }
+            else
+            {
+                $('#readprocess' + t).css('display','none');
+                $('#processbar' + t).html("<span class='readprocess'>Haven't started</span>");
+            }
         }
+        listBody = list;
     }
 
     function refresh() {
@@ -60,7 +71,8 @@ myApp.onPageBeforeInit('zone',function (page) {
             return '<li class="accordion-item swipeout">' +
                         '<a href="#" class="item-content item-link">' +
                             '<div class="item-inner">' +
-                                '<div class="item-title">' + item.item + '<span class="readprocess">&nbsp;Page&nbsp;' + item.pagenow + '&nbsp;of&nbsp;' +item.pageall + '</span>' +
+                                '<div class="item-title"><span class="bookname">' + item.item + '</span>' +
+                                '<span class="readprocess" id="readprocess' + index + '">&nbsp;Page&nbsp;' + item.pagenow + '&nbsp;of&nbsp;' +item.pageall + '</span>' +
                                 '<p id="processbar'+ index +'"><span></span></p>' +
                             '</div>' +
                             '</div>' +
@@ -73,8 +85,6 @@ myApp.onPageBeforeInit('zone',function (page) {
         }
     });
     refresh();
-
-
 
     $$('#bookstate').on('click',function () {
         $$('#bookpagenow').toggleClass('disabled')
@@ -91,13 +101,30 @@ myApp.onPageBeforeInit('zone',function (page) {
         var bookname = $('#bookname').val();
         var bookpageall = $('#bookpageall').val();
         var bookpagenow = $('#bookpagenow').val();
-        if(bookname && bookpagenow) {
+        var state = 0;
+        if($('#bookstateHidden').prop('checked')){
+            state = 1;
+        }
+        if(bookname && bookpageall) {
             $.post("https://python-dixeran.rhcloud.com/insert",
-                {code: code, bookname: bookname, bookpageall: bookpageall, bookpagenow: bookpagenow}, function () {
+                {code: code, state:state, bookname: bookname, bookpageall: bookpageall, bookpagenow: bookpagenow}, function () {
                     myApp.closeModal('.popover');
                     refresh();
                 });
         }
+    });
+
+    $(document).on('click','.swipeout-delete',function (e) {
+        var target = e.target;
+        var index = target.getAttribute('index');
+        $.post("https://python-dixeran.rhcloud.com/delete",
+            {code:$.cookie('code'), bookname:listBody[index][3]},function (data) {
+                myApp.addNotification({
+                    message:data,
+                    hold:3000
+                });
+            }
+        );
     });
     /* var code = $.cookie('code');
     $.post("https://python-dixeran.rhcloud.com/fetch",{code:code},function (listData) {
