@@ -71,7 +71,7 @@ myApp.onPageBeforeInit('zone',function (page) {
             return '<li class="accordion-item swipeout">' +
                         '<a href="#" class="item-content item-link">' +
                             '<div class="item-inner">' +
-                                '<div class="item-title"><span class="bookname">' + item.item + '</span>' +
+                                '<div class="item-title"><div class="bookname">' + item.item + '</div>' +
                                 '<span class="readprocess" id="readprocess' + index + '">&nbsp;Page&nbsp;' + item.pagenow + '&nbsp;of&nbsp;' +item.pageall + '</span>' +
                                 '<p id="processbar'+ index +'"><span></span></p>' +
                             '</div>' +
@@ -97,6 +97,7 @@ myApp.onPageBeforeInit('zone',function (page) {
     });
 
     $('#book-add-submit').on('click',function () {
+        myApp.showProgressbar('.popover-add');
         var code = $.cookie('code');
         var bookname = $('#bookname').val();
         var bookpageall = $('#bookpageall').val();
@@ -108,8 +109,9 @@ myApp.onPageBeforeInit('zone',function (page) {
         if(bookname && bookpageall) {
             $.post("https://python-dixeran.rhcloud.com/insert",
                 {code: code, state:state, bookname: bookname, bookpageall: bookpageall, bookpagenow: bookpagenow}, function () {
-                    myApp.closeModal('.popover');
                     refresh();
+                    myApp.hideProgressbar('.popover-add');
+                    myApp.closeModal('.popover');
                 });
         }
     });

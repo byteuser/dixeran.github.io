@@ -18,7 +18,7 @@
 ul .accordion-item .bookname{
     width: 65%;
     display: inline-block;
-    overflow: hidden;
+    white-space: normal;
 }
 
 ul li .item-title{
