@@ -79,7 +79,7 @@ myApp.onPageBeforeInit('zone',function (page) {
                         '<a href="#" class="item-content item-link">' +
                             '<div class="item-inner">' +
                                 '<div class="item-title list-holder"><div class="bookname">' + item.item + '</div>' +
-                                '<span class="readprocess" id="readprocess' + index + '">&nbsp;Page&nbsp;' + item.pagenow + '&nbsp;of&nbsp;' +item.pageall + '</span>' +
+                                '<span class="readprocess" id="readprocess' + index + '">' + item.pagenow + '&nbsp;of&nbsp;' +item.pageall + '</span>' +
                                 '<p id="processbar'+ index +'"><span></span></p>' +
                                 '</div>' +
                             '</div>' +
