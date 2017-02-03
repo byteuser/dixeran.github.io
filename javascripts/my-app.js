@@ -92,7 +92,7 @@ myApp.onPageBeforeInit('zone',function (page) {
                                                 '<div class="item-input input-field" style="width: 70%">' +
                                                     '<input type="text" placeholder="Today you read.." id="pageaddNum' + index + '">'  +
                                                 '</div>' +
-                                                '<p class="buttons-row"><a href="#" class="button button-fill button-raised pageadd" index="' + index + '">Update</a></p>' +
+                                                '<p class="buttons-row"><a href="#" class="button button-fill button-raised" index="' + index + '">Update</a></p>' +
                                             '</div>' +
                                         '</div>' +
                                     '</li></ul>' +
