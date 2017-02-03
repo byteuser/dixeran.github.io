@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="badc3dda-dbba-4db6-a94e-2ceb9085745b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascripts/framework7.js" afterPath="$PROJECT_DIR$/javascripts/framework7.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascripts/my-app.js" afterPath="$PROJECT_DIR$/javascripts/my-app.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -50,25 +50,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="my-app.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="my-app.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/javascripts/my-app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="972">
-              <caret line="91" column="71" lean-forward="false" selection-start-line="91" selection-start-column="71" selection-end-line="91" selection-end-column="71" />
+            <state relative-caret-position="468">
+              <caret line="94" column="78" lean-forward="true" selection-start-line="94" selection-start-column="78" selection-end-line="94" selection-end-column="78" />
               <folding>
-                <marker date="1486123972348" expanded="true" signature="2726:2732" ph=" " />
-                <marker date="1486123972348" expanded="true" signature="2734:2740" ph=" " />
-                <marker date="1486123972348" expanded="true" signature="3398:3408" ph="..." />
+                <marker date="1486126676014" expanded="true" signature="2726:2732" ph=" " />
+                <marker date="1486126676014" expanded="true" signature="2734:2740" ph=" " />
+                <marker date="1486126676014" expanded="true" signature="3410:3420" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="framework7.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="framework7.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/javascripts/framework7.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="395">
-              <caret line="7766" column="8" lean-forward="false" selection-start-line="7766" selection-start-column="8" selection-end-line="7766" selection-end-column="8" />
+            <state relative-caret-position="710">
+              <caret line="7781" column="69" lean-forward="false" selection-start-line="7781" selection-start-column="69" selection-end-line="7781" selection-end-column="69" />
               <folding>
                 <marker date="1486126552085" expanded="true" signature="210157:210189" ph="..." />
                 <marker date="1486126552085" expanded="true" signature="272598:272605" ph="..." />
@@ -139,8 +139,8 @@
         <option value="$PROJECT_DIR$/stylesheets/style-mob.css" />
         <option value="$PROJECT_DIR$/javascripts/Login-mob.js" />
         <option value="$PROJECT_DIR$/javascripts/login.js" />
-        <option value="$PROJECT_DIR$/javascripts/my-app.js" />
         <option value="$PROJECT_DIR$/javascripts/framework7.js" />
+        <option value="$PROJECT_DIR$/javascripts/my-app.js" />
       </list>
     </option>
   </component>
@@ -425,12 +425,12 @@
       <workItem from="1486005397195" duration="20774000" />
       <workItem from="1486091515459" duration="8026000" />
       <workItem from="1486116683027" duration="91000" />
-      <workItem from="1486123291483" duration="3251000" />
+      <workItem from="1486123291483" duration="3375000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="204338000" />
+    <option name="totallyTimeSpent" value="204462000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -754,26 +754,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zone-mob.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="27" column="39" lean-forward="true" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javascripts/my-app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="972">
-          <caret line="91" column="71" lean-forward="false" selection-start-line="91" selection-start-column="71" selection-end-line="91" selection-end-column="71" />
-          <folding>
-            <marker date="1486123972348" expanded="true" signature="2726:2732" ph=" " />
-            <marker date="1486123972348" expanded="true" signature="2734:2740" ph=" " />
-            <marker date="1486123972348" expanded="true" signature="3398:3408" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/javascripts/jquery.cookie.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -820,12 +800,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/javascripts/framework7.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="7766" column="8" lean-forward="false" selection-start-line="7766" selection-start-column="8" selection-end-line="7766" selection-end-column="8" />
+        <state relative-caret-position="710">
+          <caret line="7781" column="69" lean-forward="false" selection-start-line="7781" selection-start-column="69" selection-end-line="7781" selection-end-column="69" />
           <folding>
             <marker date="1486126552085" expanded="true" signature="210157:210189" ph="..." />
             <marker date="1486126552085" expanded="true" signature="272598:272605" ph="..." />
             <marker date="1486126552085" expanded="true" signature="329570:329722" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zone-mob.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="27" column="39" lean-forward="true" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascripts/my-app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="94" column="78" lean-forward="true" selection-start-line="94" selection-start-column="78" selection-end-line="94" selection-end-column="78" />
+          <folding>
+            <marker date="1486126676014" expanded="true" signature="2726:2732" ph=" " />
+            <marker date="1486126676014" expanded="true" signature="2734:2740" ph=" " />
+            <marker date="1486126676014" expanded="true" signature="3410:3420" ph="..." />
           </folding>
         </state>
       </provider>
