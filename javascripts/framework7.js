@@ -3686,7 +3686,7 @@
         
             sizePopover();
         
-
+            $(window).on('resize', sizePopover);
         
             modal.on('popover:close', function () {
                 $(window).off('resize', sizePopover);
@@ -6065,12 +6065,12 @@
             vl._isVisible = function (el) {
                 return !!( el.offsetWidth || el.offsetHeight || el.getClientRects().length );
             };
-            vl.handleResize = function (e) {
+            /*vl.handleResize = function (e) {
                 if (vl._isVisible(vl.listBlock[0])) {
                     vl.setListSize();
                     vl.render(true);
                 }
-            };
+            };*/
         
             vl.attachEvents = function (detach) {
                 var action = detach ? 'off' : 'on';
@@ -7752,7 +7752,7 @@
         ************   App Resize Actions   ************
         ======================================================*/
         // Prevent iPad horizontal body scrolling when soft keyboard is opened
-        function _fixIpadBodyScrolLeft() {
+        /*function _fixIpadBodyScrolLeft() {
             if (app.device.ipad) {
                 document.body.scrollLeft = 0;
                 setTimeout(function () {
@@ -7775,7 +7775,7 @@
             }
             _fixIpadBodyScrolLeft();
         };
-        
+        */
 
         /*===============================================================================
         ************   Store and parse forms data   ************
