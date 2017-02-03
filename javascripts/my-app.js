@@ -157,7 +157,7 @@ myApp.onPageBeforeInit('zone',function (page) {
         var process = (pageLast / listBody[index][6])*100;
         myApp.setProgressbar('#processbar' + index,process,1000);
         myApp.accordionClose('.accordion-item');
-        $('#readprocess' + index).html('&nbsp;Page&nbsp;' + pageLast + '&nbsp;of&nbsp;' + listBody[index][6]);
+        $('#readprocess' + index).html(pageLast + '&nbsp;of&nbsp;' + listBody[index][6]);
         $.post("https://python-dixeran.rhcloud.com/update",{
             code:$.cookie('code'),
             bookname: listBody[index][3],
