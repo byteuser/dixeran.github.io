@@ -9725,7 +9725,7 @@
                     }
                 }
             }
-            $(window).on('resize', resizeCols);
+
         
             // HTML Layout
             p.columnHTML = function (col, onlyItems) {

@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="badc3dda-dbba-4db6-a94e-2ceb9085745b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascripts/my-app.js" afterPath="$PROJECT_DIR$/javascripts/my-app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascripts/framework7.js" afterPath="$PROJECT_DIR$/javascripts/framework7.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,11 +24,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="index-mob.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index-mob.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index-mob.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-42">
-              <caret line="72" column="41" lean-forward="true" selection-start-line="72" selection-start-column="41" selection-end-line="72" selection-end-column="41" />
+            <state relative-caret-position="397">
+              <caret line="164" column="45" lean-forward="false" selection-start-line="164" selection-start-column="45" selection-end-line="164" selection-end-column="45" />
               <folding>
                 <element signature="e#3474#3480#0" expanded="true" />
                 <element signature="e#3480#3486#0" expanded="true" />
@@ -50,15 +51,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="my-app.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="my-app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/javascripts/my-app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
+            <state relative-caret-position="972">
               <caret line="91" column="71" lean-forward="false" selection-start-line="91" selection-start-column="71" selection-end-line="91" selection-end-column="71" />
               <folding>
                 <marker date="1486123972348" expanded="true" signature="2726:2732" ph=" " />
                 <marker date="1486123972348" expanded="true" signature="2734:2740" ph=" " />
                 <marker date="1486123972348" expanded="true" signature="3398:3408" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="framework7.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/javascripts/framework7.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="406">
+              <caret line="9727" column="0" lean-forward="true" selection-start-line="9727" selection-start-column="0" selection-end-line="9727" selection-end-column="0" />
+              <folding>
+                <marker date="1486125672895" expanded="true" signature="210157:210189" ph="..." />
+                <marker date="1486125672895" expanded="true" signature="272598:272605" ph="..." />
+                <marker date="1486125672895" expanded="true" signature="329566:329718" ph="..." />
               </folding>
             </state>
           </provider>
@@ -93,6 +108,12 @@
       <find>.pull-to-refresh-layer</find>
       <find>body</find>
       <find>submit</find>
+      <find>onresize</find>
+      <find>progressbar</find>
+      <find>on('resize'</find>
+      <find>resize</find>
+      <find>cols</find>
+      <find>resizecols</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -112,7 +133,6 @@
         <option value="$PROJECT_DIR$/stylesheets/styles.css" />
         <option value="$PROJECT_DIR$/javascripts/zone-mob.js" />
         <option value="$PROJECT_DIR$/stylesheets/material-icons.css" />
-        <option value="$PROJECT_DIR$/javascripts/framework7.js" />
         <option value="$PROJECT_DIR$/zone-mob.html" />
         <option value="$PROJECT_DIR$/stylesheets/framework7.material.min.css" />
         <option value="$PROJECT_DIR$/index-mob.html" />
@@ -120,6 +140,7 @@
         <option value="$PROJECT_DIR$/javascripts/Login-mob.js" />
         <option value="$PROJECT_DIR$/javascripts/login.js" />
         <option value="$PROJECT_DIR$/javascripts/my-app.js" />
+        <option value="$PROJECT_DIR$/javascripts/framework7.js" />
       </list>
     </option>
   </component>
@@ -252,7 +273,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="jquery-3.1.1.js" />
+              <option name="myItemId" value="framework7.js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NestingTreeNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -404,12 +425,12 @@
       <workItem from="1486005397195" duration="20774000" />
       <workItem from="1486091515459" duration="8026000" />
       <workItem from="1486116683027" duration="91000" />
-      <workItem from="1486123291483" duration="678000" />
+      <workItem from="1486123291483" duration="2380000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="201765000" />
+    <option name="totallyTimeSpent" value="203467000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -427,6 +448,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15364583" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930845" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930845" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -437,7 +459,6 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.48990577" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -453,32 +474,31 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/javascripts/framework7.js</url>
+          <line>3688</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/javascripts/framework7.js</url>
+          <line>6705</line>
+          <properties />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/javascripts/framework7.js</url>
+          <line>9727</line>
+          <properties />
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="7" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/stylesheets/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="18" column="48" lean-forward="true" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javascripts/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/stylesheets/styles.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1176">
@@ -680,13 +700,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/javascripts/framework7.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="5991" column="65" lean-forward="false" selection-start-line="5991" selection-start-column="64" selection-end-line="5991" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/stylesheets/framework7.material.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-18693">
@@ -741,21 +754,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index-mob.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-42">
-          <caret line="72" column="41" lean-forward="true" selection-start-line="72" selection-start-column="41" selection-end-line="72" selection-end-column="41" />
-          <folding>
-            <element signature="e#3474#3480#0" expanded="true" />
-            <element signature="e#3480#3486#0" expanded="true" />
-            <element signature="e#4407#4413#0" expanded="true" />
-            <element signature="e#4413#4419#0" expanded="true" />
-            <element signature="e#8624#8630#0" expanded="true" />
-            <element signature="e#8630#8636#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/zone-mob.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="567">
@@ -766,12 +764,68 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/javascripts/my-app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
+        <state relative-caret-position="972">
           <caret line="91" column="71" lean-forward="false" selection-start-line="91" selection-start-column="71" selection-end-line="91" selection-end-column="71" />
           <folding>
             <marker date="1486123972348" expanded="true" signature="2726:2732" ph=" " />
             <marker date="1486123972348" expanded="true" signature="2734:2740" ph=" " />
             <marker date="1486123972348" expanded="true" signature="3398:3408" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascripts/jquery.cookie.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascripts/framework7.min.js.map">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="0" column="1072" lean-forward="false" selection-start-line="0" selection-start-column="1072" selection-end-line="0" selection-end-column="1072" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="sourcemapFileViewerProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascripts/framework7.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15687">
+          <caret line="17" column="8057" lean-forward="false" selection-start-line="17" selection-start-column="8057" selection-end-line="17" selection-end-column="8057" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascripts/framework7.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="9727" column="0" lean-forward="true" selection-start-line="9727" selection-start-column="0" selection-end-line="9727" selection-end-column="0" />
+          <folding>
+            <marker date="1486125672895" expanded="true" signature="210157:210189" ph="..." />
+            <marker date="1486125672895" expanded="true" signature="272598:272605" ph="..." />
+            <marker date="1486125672895" expanded="true" signature="329566:329718" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index-mob.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="164" column="45" lean-forward="false" selection-start-line="164" selection-start-column="45" selection-end-line="164" selection-end-column="45" />
+          <folding>
+            <element signature="e#3474#3480#0" expanded="true" />
+            <element signature="e#3480#3486#0" expanded="true" />
+            <element signature="e#4407#4413#0" expanded="true" />
+            <element signature="e#4413#4419#0" expanded="true" />
+            <element signature="e#8624#8630#0" expanded="true" />
+            <element signature="e#8630#8636#0" expanded="true" />
           </folding>
         </state>
       </provider>
