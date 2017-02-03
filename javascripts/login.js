@@ -7,7 +7,7 @@ $(document).ready(function() {
     var inpsd = $.cookie('password');
     $.post("https://python-dixeran.rhcloud.com/",{method:'in',username:inname, password:inpsd},function (data) {
 
-        if(data == '登陆成功')
+        if(data == 'Sign in successful')
         {
             alert(data);
             window.location.href = 'zone-mob.html';
@@ -64,7 +64,7 @@ $(document).ready(function() {
         var password = $("#sign-in-password").val();
         $.post("https://python-dixeran.rhcloud.com/",{method:'in',username:name, password:password},function (data) {
             alert(data);
-            if(data == '登陆成功')
+            if(data == 'Sign in successful')
             {
                 $.post("https://python-dixeran.rhcloud.com/",{method:'code',username:name, password:password},function (decode) {
                     $.cookie('name',name,{expires:7});
