@@ -6,9 +6,10 @@ $(document).ready(function() {
     var inname = $.cookie('name');
     var inpsd = $.cookie('password');
     $.post("https://python-dixeran.rhcloud.com/",{method:'in',username:inname, password:inpsd},function (data) {
-        alert(data);
+
         if(data == '登陆成功')
         {
+            alert(data);
             window.location.href = 'zone-mob.html';
         }
     });
