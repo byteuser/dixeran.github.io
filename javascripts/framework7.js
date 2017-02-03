@@ -7764,11 +7764,11 @@
             $(window).on('resize', app.resize);
             $(window).on('orientationchange', app.orientationchange);
         };
-        /*app.resize = function () {
+        app.resize = function () {
             if (app.sizeNavbars) app.sizeNavbars();
             _fixIpadBodyScrolLeft();
             
-        };*/
+        };
         app.orientationchange = function () {
             if (app.device && app.device.minimalUi) {
                 if (window.orientation === 90 || window.orientation === -90) document.body.scrollTop = 0;
