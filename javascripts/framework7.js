@@ -3539,7 +3539,11 @@
                 else {
                     modal.removeClass('popover-on-left popover-on-right popover-on-top popover-on-bottom').css({left: '', top: ''});
                 }
-        
+
+                if($('#bookname').is(":focus")){
+                    return;
+                }
+                //加入这行代码避免输入法弹出时在最顶上的input被顶出
                 var targetWidth = target.outerWidth();
                 var targetHeight = target.outerHeight();
                 var targetOffset = target.offset();
@@ -3685,8 +3689,7 @@
             }
         
             sizePopover();
-        
-            //$(window).on('resize', sizePopover);
+            $(window).on('resize', sizePopover);
         
             modal.on('popover:close', function () {
                 $(window).off('resize', sizePopover);
