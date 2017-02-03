@@ -3686,7 +3686,7 @@
         
             sizePopover();
         
-            $(window).on('resize', sizePopover);
+            //$(window).on('resize', sizePopover);
         
             modal.on('popover:close', function () {
                 $(window).off('resize', sizePopover);
