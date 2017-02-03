@@ -3686,7 +3686,7 @@
         
             sizePopover();
         
-            $(window).on('resize', sizePopover);
+
         
             modal.on('popover:close', function () {
                 $(window).off('resize', sizePopover);
@@ -9725,7 +9725,7 @@
                     }
                 }
             }
-
+            $(window).on('resize', resizeCols);
         
             // HTML Layout
             p.columnHTML = function (col, onlyItems) {
