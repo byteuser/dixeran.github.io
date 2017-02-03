@@ -36,11 +36,13 @@ myApp.onPageBeforeInit('zone',function (page) {
             else if(list[t][2] == 1 && list[t][5] >= list[t][6])
             {
                 $('#readprocess' + t).css('display','none');
-                $('#processbar' + t).html("<span class='readprocess'>Finished!   " + '<i class="material-icons">check_box</i></span>');
+                $('#list-content' + t).css('display','none');
+                $('#processbar' + t).html("<span class='readprocess'>Finished! " + '<i class="material-icons">check_box</i></span>');
             }
             else
             {
                 $('#readprocess' + t).css('display','none');
+                $('#list-content' + t).css('display','none');
                 $('#processbar' + t).html("<span class='readprocess'>Haven't started</span>");
             }
         }
@@ -83,7 +85,7 @@ myApp.onPageBeforeInit('zone',function (page) {
                             '</div>' +
                         '</a>' +
                         '<div class="accordion-item-content">' +
-                                '<div class="list-block">' +
+                                '<div class="list-block" id="list-content' + index +'">' +
                                     '<ul><li>' +
                                         '<div class="item-content">' +
                                             '<div class="item-inner">' +

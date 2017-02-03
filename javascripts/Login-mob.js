@@ -15,7 +15,7 @@ $(document).ready(function () {
             password: inpsd
         }, function (data) {
             myApp.closeNotification('.notification-item');
-            if (data == '登陆成功') {
+            if (data == 'Sign in successful') {
                 myApp.alert(data, '登陆消息');
                 mainView.router.loadPage('zone-mob.html');
             }
@@ -30,7 +30,7 @@ $(document).ready(function () {
             myApp.alert(data,'登录消息',function () {
                 myApp.hideProgressbar('#sign-in-button');
             });
-            if(data == '登陆成功')
+            if(data == 'Sign in successful')
             {
                 $.post("https://python-dixeran.rhcloud.com/",{method:'code',username:name, password:password},function (decode) {
                     $.cookie('name',name,{expires:7});
