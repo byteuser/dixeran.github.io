@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="badc3dda-dbba-4db6-a94e-2ceb9085745b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index-mob.html" afterPath="$PROJECT_DIR$/index-mob.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascripts/Login-mob.js" afterPath="$PROJECT_DIR$/javascripts/Login-mob.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascripts/my-app.js" afterPath="$PROJECT_DIR$/javascripts/my-app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/style-mob.css" afterPath="$PROJECT_DIR$/stylesheets/style-mob.css" />
     </list>
@@ -26,11 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="index-mob.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index-mob.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index-mob.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="491">
-              <caret line="176" column="50" lean-forward="false" selection-start-line="176" selection-start-column="50" selection-end-line="176" selection-end-column="50" />
+            <state relative-caret-position="294">
+              <caret line="70" column="78" lean-forward="true" selection-start-line="70" selection-start-column="44" selection-end-line="70" selection-end-column="78" />
               <folding>
                 <element signature="e#3474#3480#0" expanded="true" />
                 <element signature="e#3480#3486#0" expanded="true" />
@@ -43,11 +42,27 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="my-app.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/javascripts/my-app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="35" column="51" lean-forward="false" selection-start-line="35" selection-start-column="51" selection-end-line="35" selection-end-column="51" />
+              <folding>
+                <marker date="1486097410957" expanded="true" signature="2584:2590" ph=" " />
+                <marker date="1486097410957" expanded="true" signature="2594:2600" ph=" " />
+                <marker date="1486097410957" expanded="true" signature="2620:2626" ph=" " />
+                <marker date="1486097410957" expanded="true" signature="2628:2634" ph=" " />
+                <marker date="1486097410957" expanded="true" signature="3274:3284" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Login-mob.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/javascripts/Login-mob.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="819">
-              <caret line="39" column="18" lean-forward="true" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
+            <state relative-caret-position="459">
+              <caret line="39" column="18" lean-forward="false" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -63,26 +78,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="my-app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/javascripts/my-app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1435">
-              <caret line="123" column="39" lean-forward="true" selection-start-line="123" selection-start-column="39" selection-end-line="123" selection-end-column="39" />
-              <folding>
-                <marker date="1486037675118" expanded="true" signature="2257:2263" ph=" " />
-                <marker date="1486037675118" expanded="true" signature="2267:2273" ph=" " />
-                <marker date="1486037675118" expanded="true" signature="2293:2299" ph=" " />
-                <marker date="1486037675118" expanded="true" signature="2301:2307" ph=" " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="style-mob.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/stylesheets/style-mob.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="19" column="26" lean-forward="false" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+            <state relative-caret-position="525">
+              <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -150,10 +150,10 @@
         <option value="$PROJECT_DIR$/javascripts/framework7.js" />
         <option value="$PROJECT_DIR$/zone-mob.html" />
         <option value="$PROJECT_DIR$/stylesheets/framework7.material.min.css" />
-        <option value="$PROJECT_DIR$/javascripts/my-app.js" />
-        <option value="$PROJECT_DIR$/stylesheets/style-mob.css" />
         <option value="$PROJECT_DIR$/javascripts/Login-mob.js" />
         <option value="$PROJECT_DIR$/index-mob.html" />
+        <option value="$PROJECT_DIR$/stylesheets/style-mob.css" />
+        <option value="$PROJECT_DIR$/javascripts/my-app.js" />
       </list>
     </option>
   </component>
@@ -164,8 +164,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="365" />
-    <option name="y" value="122" />
+    <option name="x" value="367" />
+    <option name="y" value="58" />
     <option name="width" value="1554" />
     <option name="height" value="907" />
   </component>
@@ -435,12 +435,13 @@
       <workItem from="1485850279721" duration="14370000" />
       <workItem from="1485873941140" duration="1817000" />
       <workItem from="1485943276261" duration="15651000" />
-      <workItem from="1486005397195" duration="20272000" />
+      <workItem from="1486005397195" duration="20774000" />
+      <workItem from="1486091515459" duration="5875000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="192468000" />
+    <option name="totallyTimeSpent" value="198845000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -452,7 +453,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="365" y="122" width="1554" height="907" extended-state="0" />
+    <frame x="367" y="58" width="1554" height="907" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15364583" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -768,39 +769,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/stylesheets/style-mob.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="19" column="26" lean-forward="false" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/javascripts/Login-mob.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="819">
-          <caret line="39" column="18" lean-forward="true" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
+        <state relative-caret-position="459">
+          <caret line="39" column="18" lean-forward="false" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javascripts/my-app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1435">
-          <caret line="123" column="39" lean-forward="true" selection-start-line="123" selection-start-column="39" selection-end-line="123" selection-end-column="39" />
-          <folding>
-            <marker date="1486037675118" expanded="true" signature="2257:2263" ph=" " />
-            <marker date="1486037675118" expanded="true" signature="2267:2273" ph=" " />
-            <marker date="1486037675118" expanded="true" signature="2293:2299" ph=" " />
-            <marker date="1486037675118" expanded="true" signature="2301:2307" ph=" " />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index-mob.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="491">
-          <caret line="176" column="50" lean-forward="false" selection-start-line="176" selection-start-column="50" selection-end-line="176" selection-end-column="50" />
+        <state relative-caret-position="294">
+          <caret line="70" column="78" lean-forward="true" selection-start-line="70" selection-start-column="44" selection-end-line="70" selection-end-column="78" />
           <folding>
             <element signature="e#3474#3480#0" expanded="true" />
             <element signature="e#3480#3486#0" expanded="true" />
@@ -808,6 +788,28 @@
             <element signature="e#4413#4419#0" expanded="true" />
             <element signature="e#8624#8630#0" expanded="true" />
             <element signature="e#8630#8636#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stylesheets/style-mob.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascripts/my-app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="35" column="51" lean-forward="false" selection-start-line="35" selection-start-column="51" selection-end-line="35" selection-end-column="51" />
+          <folding>
+            <marker date="1486097410957" expanded="true" signature="2584:2590" ph=" " />
+            <marker date="1486097410957" expanded="true" signature="2594:2600" ph=" " />
+            <marker date="1486097410957" expanded="true" signature="2620:2626" ph=" " />
+            <marker date="1486097410957" expanded="true" signature="2628:2634" ph=" " />
+            <marker date="1486097410957" expanded="true" signature="3274:3284" ph="..." />
           </folding>
         </state>
       </provider>
