@@ -152,6 +152,11 @@ myApp.onPageBeforeInit('zone',function (page) {
         var target = e.target;
         var index = target.getAttribute('index');
         var pageAdd = parseInt($('#pageaddNum' + index).val());
+        if(isNaN(pageAdd)){
+            $('#pageaddNum' + index).val(null);
+            alert('Accept Numbers only');
+            return;
+        }
         var pageLast = listBody[index][5];
         pageLast = pageLast + pageAdd;
         var process = (pageLast / listBody[index][6])*100;
@@ -202,10 +207,8 @@ myApp.onPageBeforeInit('zone',function (page) {
                 src: data // or 'data:image/jpg;base64,' + data
             }, function(result){
                 if(result.codeResult) {
-                    alert(result.codeResult.code);
                     $.post("https://python-dixeran.rhcloud.com/decode",{ISBN:result.codeResult.code},function (Bookdata) {
                         var Bookinfo = $.parseJSON(Bookdata);
-                        alert(Bookinfo[0]);
                         $('#bookname').val(Bookinfo[0]);
                         $('#bookpageall').val(Bookinfo[3]);
                         myApp.hideProgressbar('.popover-add');
