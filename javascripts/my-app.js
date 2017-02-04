@@ -202,7 +202,7 @@ myApp.onPageBeforeInit('zone',function (page) {
                 src: data // or 'data:image/jpg;base64,' + data
             }, function(result){
                 if(result.codeResult) {
-                    console.log("result", result.codeResult.code);
+                    alert(result.codeResult.code);
                     $.post("https://python-dixeran.rhcloud.com/decode",{ISBN:result.codeResult.code},function (Bookdata) {
                         var Bookinfo = $.parseJSON(Bookdata);
                         myApp.hideProgressbar('.popover-add');

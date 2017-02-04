@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="badc3dda-dbba-4db6-a94e-2ceb9085745b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index-mob.html" afterPath="$PROJECT_DIR$/index-mob.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascripts/my-app.js" afterPath="$PROJECT_DIR$/javascripts/my-app.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -25,10 +23,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="index-mob.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index-mob.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index-mob.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="428">
+            <state relative-caret-position="-580">
               <caret line="170" column="42" lean-forward="false" selection-start-line="170" selection-start-column="42" selection-end-line="170" selection-end-column="42" />
               <folding>
                 <element signature="e#3474#3480#0" expanded="true" />
@@ -54,15 +52,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="my-app.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="my-app.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/javascripts/my-app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="488">
-              <caret line="207" column="56" lean-forward="true" selection-start-line="207" selection-start-column="56" selection-end-line="207" selection-end-column="56" />
+            <state relative-caret-position="299">
+              <caret line="204" column="50" lean-forward="true" selection-start-line="204" selection-start-column="50" selection-end-line="204" selection-end-column="50" />
               <folding>
-                <marker date="1486198453180" expanded="true" signature="2726:2732" ph=" " />
-                <marker date="1486198453180" expanded="true" signature="2734:2740" ph=" " />
-                <marker date="1486198453180" expanded="true" signature="3410:3420" ph="..." />
+                <marker date="1486200200664" expanded="true" signature="2726:2732" ph=" " />
+                <marker date="1486200200664" expanded="true" signature="2734:2740" ph=" " />
+                <marker date="1486200200664" expanded="true" signature="3410:3420" ph="..." />
               </folding>
             </state>
           </provider>
@@ -157,8 +155,8 @@
         <option value="$PROJECT_DIR$/javascripts/Login-mob.js" />
         <option value="$PROJECT_DIR$/javascripts/login.js" />
         <option value="$PROJECT_DIR$/javascripts/framework7.js" />
-        <option value="$PROJECT_DIR$/javascripts/my-app.js" />
         <option value="$PROJECT_DIR$/index-mob.html" />
+        <option value="$PROJECT_DIR$/javascripts/my-app.js" />
       </list>
     </option>
   </component>
@@ -446,12 +444,12 @@
       <workItem from="1486123291483" duration="4575000" />
       <workItem from="1486132167353" duration="2964000" />
       <workItem from="1486179292404" duration="3583000" />
-      <workItem from="1486196107592" duration="2633000" />
+      <workItem from="1486196107592" duration="3253000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="214842000" />
+    <option name="totallyTimeSpent" value="215462000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -815,21 +813,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/javascripts/my-app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="207" column="56" lean-forward="true" selection-start-line="207" selection-start-column="56" selection-end-line="207" selection-end-column="56" />
-          <folding>
-            <marker date="1486198453180" expanded="true" signature="2726:2732" ph=" " />
-            <marker date="1486198453180" expanded="true" signature="2734:2740" ph=" " />
-            <marker date="1486198453180" expanded="true" signature="3410:3420" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index-mob.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
+        <state relative-caret-position="-580">
           <caret line="170" column="42" lean-forward="false" selection-start-line="170" selection-start-column="42" selection-end-line="170" selection-end-column="42" />
           <folding>
             <element signature="e#3474#3480#0" expanded="true" />
@@ -840,6 +826,18 @@
             <element signature="e#8778#8784#0" expanded="true" />
             <element signature="n#style#0;n#p#2;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="e#12324#12330#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascripts/my-app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="204" column="50" lean-forward="true" selection-start-line="204" selection-start-column="50" selection-end-line="204" selection-end-column="50" />
+          <folding>
+            <marker date="1486200200664" expanded="true" signature="2726:2732" ph=" " />
+            <marker date="1486200200664" expanded="true" signature="2734:2740" ph=" " />
+            <marker date="1486200200664" expanded="true" signature="3410:3420" ph="..." />
           </folding>
         </state>
       </provider>
