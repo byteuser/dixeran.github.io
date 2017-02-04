@@ -10,7 +10,7 @@ $(document).ready(function() {
         if(data == 'Sign in successful')
         {
             alert(data);
-            window.location.href = 'zone-mob.html';
+            window.location.href = 'index-mob.html';
         }
     });
 
@@ -70,7 +70,7 @@ $(document).ready(function() {
                     $.cookie('name',name,{expires:7});
                     $.cookie('password',password,{expires:7});
                     $.cookie('code',decode,{expires:7});
-                    window.location.href = 'zone-mob.html'
+                    window.location.href = 'index-mob.html'
                 })
             }
         });
