@@ -102,8 +102,9 @@
                         <div class="card">
                             <div class="card-content">
                                 <div class="card-content-inner">
-                                    <p>STARRY-mobile is powered by Framework7.</p>
+                                    <p>STARRY-mobile is powered by Framework7</p>
                                     <p>But, unfortunately, still include JQuery.</p>
+                                    <p>Thanks to the open source barcode-scanner: QuaggaJS</p>
                                     <p>Using device that smaller than iPhone5 may cause problems.</p>
                                 </div>
                             </div>
@@ -167,6 +168,7 @@
     <script src="javascripts/jquery.cookie.js"></script>
     <script src="javascripts/Login-mob.js"></script>
     <script src="javascripts/my-app.js"></script>
+    <script src="javascripts/quagga.min.js"></script>
     <!-- Panel -->
     <div class="panel-overlay"></div>
     <div class="panel panel-right panel-cover">
@@ -175,12 +177,13 @@
                 <span>&nbsp;&nbsp;Settings</span>
             </p>
             <p><a href="#" class="button color-red" id="sign-out">Sign Out</a></p>
+            <p style="display: none"><input type="file" id="scanf"></p>
         </div>
     </div>
     <!--Pop up-->
     <div class="popover popover-add">
         <div class="content-block ">
-            <div class="content-block-title">Add a book</div>
+            <div class="content-block-title">Add a book </div>
             <form>
                 <div class="list-block">
                     <ul>
@@ -238,6 +241,7 @@
                     </ul>
                     <p class="buttons-row">
                         <a href="#" class="button button-raised close-popover">Cancel</a>
+                        <a href="#" class="button button-raised button-fill" id="scanto"><i class="material-icons">camera</i>&nbsp;ISBN</a>
                         <a href="#" class="button button-raised button-fill" id="book-add-submit">Submit</a>
                     </p>
                 </div>

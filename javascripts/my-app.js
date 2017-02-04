@@ -180,5 +180,40 @@ myApp.onPageBeforeInit('zone',function (page) {
             myApp.pullToRefreshDone('.pull-to-refresh-content');
         },2000);
     });
+
+    $('#scanto').on('click',function () {
+        document.getElementById('scanf').click();
+    });
+
+
+    $('#scanf').on('change',function (e) {
+        myApp.showProgressbar('.popover-add');
+        var img = e.target.files[0];
+        var reader = new FileReader();
+        var data;
+        reader.readAsDataURL(img);
+        reader.onloadend = function () {
+            data = reader.result;
+            Quagga.decodeSingle({
+                decoder: {
+                    readers: ["ean_reader"] // List of active readers
+                },
+                locate: true, // try to locate the barcode in the image
+                src: data // or 'data:image/jpg;base64,' + data
+            }, function(result){
+                if(result.codeResult) {
+                    console.log("result", result.codeResult.code);
+                    $.post("https://python-dixeran.rhcloud.com/decode",{ISBN:result.codeResult.code},function (Bookdata) {
+                        var Bookinfo = $.parseJSON(Bookdata);
+                        myApp.hideProgressbar('.popover-add');
+                        $('#bookname').val(Bookinfo[0]);
+                        $('#bookpageall').val(Bookinfo[3]);
+                    })
+                } else {
+                    console.log("not detected");
+                }
+            });
+        };
+    });
 });
 
