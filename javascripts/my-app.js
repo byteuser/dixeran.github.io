@@ -205,9 +205,10 @@ myApp.onPageBeforeInit('zone',function (page) {
                     alert(result.codeResult.code);
                     $.post("https://python-dixeran.rhcloud.com/decode",{ISBN:result.codeResult.code},function (Bookdata) {
                         var Bookinfo = $.parseJSON(Bookdata);
-                        myApp.hideProgressbar('.popover-add');
+                        alert(Bookinfo[0]);
                         $('#bookname').val(Bookinfo[0]);
                         $('#bookpageall').val(Bookinfo[3]);
+                        myApp.hideProgressbar('.popover-add');
                     })
                 } else {
                     console.log("not detected");
