@@ -32,12 +32,14 @@ myApp.onPageBeforeInit('zone',function (page) {
                 var pageall = list[t][6];
                 var progress = (pagenow/pageall)*100;
                 myApp.showProgressbar('#processbar' + t,progress);
+                $('#startButton'+ t).css('display','none');
             }
             else if(list[t][2] == 1 && list[t][5] >= list[t][6])
             {
                 $('#readprocess' + t).css('display','none');
                 $('#list-content' + t).css('display','none');
                 $('#processbar' + t).html("<span class='readprocess'>Finished! " + '<i class="material-icons">check_box</i></span>');
+                $('#startButton'+ t).css('display','none');
             }
             else
             {
@@ -85,19 +87,20 @@ myApp.onPageBeforeInit('zone',function (page) {
                             '</div>' +
                         '</a>' +
                         '<div class="accordion-item-content">' +
-                                '<div class="list-block" id="list-content' + index +'">' +
-                                    '<ul><li>' +
-                                        '<div class="item-content">' +
-                                            '<div class="item-inner">' +
-                                                '<div class="item-input input-field" style="width: 70%">' +
-                                                    '<input type="text" placeholder="Today you read.." id="pageaddNum' + index + '">'  +
-                                                '</div>' +
-                                                '<p class="buttons-row"><a href="#" class="button button-fill button-raised pageadd" index="' + index + '">Update</a></p>' +
+                            '<div class="list-block" id="list-content' + index +'">' +
+                                '<ul><li>' +
+                                    '<div class="item-content">' +
+                                        '<div class="item-inner">' +
+                                            '<div class="item-input input-field" style="width: 70%">' +
+                                                '<input type="text" placeholder="Today you read.." id="pageaddNum' + index + '">'  +
                                             '</div>' +
+                                            '<p class="buttons-row"><a href="#" class="button button-fill button-raised pageadd" index="' + index + '">Update</a></p>' +
                                         '</div>' +
-                                    '</li></ul>' +
-                                '</div>' +
-                        '<a href="#" class="swipeout-delete button color-red" index="' + index + '">Delete</a>' +
+                                    '</div>' +
+                                '</li></ul>' +
+                            '</div>' +
+                            '<a href="#" class="button color-blue start-button" index="' + index + '" id="startButton' + index +'">Start it</a>' +
+                            '<a href="#" class="swipeout-delete button color-red" index="' + index + '">Delete</a>' +
                         '</div>' +
                     '</li>'
 
@@ -176,6 +179,18 @@ myApp.onPageBeforeInit('zone',function (page) {
             {
                 refresh();
             }
+        });
+    });
+
+    $(document).on('click','.start-button',function (e) {
+        var target = e.target;
+        var index = target.getAttribute('index');
+        alert(index);
+        $.post("https://python-dixeran.rhcloud.com/start",{
+            code:$.cookie('code'),
+            bookname:listBody[index][3]
+        },function (data) {
+            refresh();
         });
     });
 
