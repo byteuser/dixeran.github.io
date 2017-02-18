@@ -185,7 +185,6 @@ myApp.onPageBeforeInit('zone',function (page) {
     $(document).on('click','.start-button',function (e) {
         var target = e.target;
         var index = target.getAttribute('index');
-        alert(index);
         $.post("https://python-dixeran.rhcloud.com/start",{
             code:$.cookie('code'),
             bookname:listBody[index][3]
