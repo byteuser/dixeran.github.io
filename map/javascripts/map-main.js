@@ -60,3 +60,5 @@ function setPath() {
         strokeWeight:6
     });
 }
+
+AMap.service('AMap.Transfer');

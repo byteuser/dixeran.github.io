@@ -12,6 +12,9 @@ $(document).ready(function () {
         dataIdAttr:'index',
         onUpdate:function (event) {
             save();
+            for(var t = 0; t<app.paths.length; t++){
+                app.paths[t].clear();//清除已有的路线
+            }
             drawLine();
         }
     });
@@ -32,6 +35,9 @@ $(document).ready(function () {
 
     /*保存*/
     $('#save-btn').on('click',function () {
+        for(var t = 0; t<app.paths.length; t++){
+            app.paths[t].clear();//清除已有的路线
+        }
         save();
         drawLine();
     });
@@ -147,6 +153,7 @@ $(document).ready(function () {
             position.push(app.items[t].location);
         }
         nodesLine.setPath(position);
+        nodesLine.show();
     }
 });
 /*jQuery部分结束*/

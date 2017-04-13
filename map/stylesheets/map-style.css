@@ -22,16 +22,19 @@ body{
     box-shadow: 3px 0 10px gray;
 }
 
-#save-btn{
-    position: fixed;
-    bottom: 3px;
-    right:3px;
-}
-
 .fade-enter{
     opacity: 0;
 }
 
 .fade-enter-active{
     transition: opacity .3s ease .2s;
+}
+
+.amap-call{
+    display:none;
+}
+
+.pathTab-container{
+    overflow: scroll;
+    height: 100%;
 }
