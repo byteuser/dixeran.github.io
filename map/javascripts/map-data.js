@@ -40,6 +40,7 @@ $(document).ready(function () {
         }
         save();
         drawLine();
+        map.setFitView();
     });
 
     /*保存节点和对应的marker，同时重整序号*/
@@ -209,6 +210,7 @@ function addInfoWindow(detailResult) {
     infoWindow.open(map, location);
     $(document).on('click','#info-add', function () {
         detailResult.poiList.pois[0].index = app.items.length;
+        detailResult.poiList.pois[0].method = 'Transfer';
         if(app.items.length > 0) {
             for (var i = 0; i < app.items.length; i++) {
                 if (app.items[i].name == detailResult.poiList.pois[0].name) {

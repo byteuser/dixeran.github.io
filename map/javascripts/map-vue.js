@@ -18,8 +18,8 @@ var app = new Vue({
         paths:[
 
         ],
-        color:[ '#D2527F', '#27AE60',  '#E67E22', '#87D37C', '#F1C40F', '#E26A6A', '#16A085',
-        '#1ABC9C', '#8E44AD', '#019875','#9B59B6', '#2ECC71', '#D35400', '#F39C12',  '#2C3E50', '#34495E']
+        color:[ '#D2527F', '#27AE60', '#2C3E50', '#E67E22', '#87D37C', '#F1C40F', '#E26A6A', '#16A085',
+        '#1ABC9C', '#8E44AD', '#019875','#9B59B6', '#2ECC71', '#D35400', '#F39C12', '#34495E']
     },
     methods:{
         showCircle:function (item) {
@@ -43,24 +43,49 @@ var app = new Vue({
             setTimeout(function () {
                 $('#save-btn').click();
             }, 90);//修改体现到DOM上有延迟
-
         },
         getPath:function () {
+            var path;
             nodesLine.hide();
             for(var t = 0; t<app.paths.length; t++){
                 app.paths[t].clear();
             }
             app.paths.splice(0, app.paths.length);
             for(var i = 0; i<app.items.length-1; i++) {
-                var transfer = new AMap.Transfer({
-                    city: app.city,
-                    map: map,
-                    panel: 'path' + (i + 1),
-                    outlineColor:app.color[i]
-                });
-                app.paths.push(transfer);
-                transfer.search(app.items[i].location, app.items[i+1].location);
+                if(app.items[i].method == 'Transfer') {
+                    path = new AMap.Transfer({
+                        city: app.city,
+                        map: map,
+                        panel: 'path' + (i + 1),
+                        outlineColor: app.color[i]
+                    });
+                }
+                else if(app.items[i].method == 'Walking'){
+                    path = new AMap.Walking({
+                        map: map,
+                        panel: 'path' + (i + 1),
+                        outlineColor: app.color[i]
+                    });
+                }
+                else if(app.items[i].method == 'Riding'){
+                    path = new AMap.Riding({
+                        map: map,
+                        panel: 'path' + (i + 1),
+                        outlineColor: app.color[i]
+                    });
+                }
+                else {
+                    path = new AMap.Driving({
+                        map: map,
+                        panel: 'path' + (i + 1),
+                        outlineColor: app.color[i],
+                        showTraffic:false
+                    });
+                }
+                app.paths.push(path);
+                path.search(app.items[i].location, app.items[i+1].location);
             }
+            map.setFitView();
         },
         renderMap:function () {
             /*var list = document.getElementById('paths');
