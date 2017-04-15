@@ -64,4 +64,5 @@ function setPath() {
 AMap.service('AMap.Transfer');
 AMap.service('AMap.Walking');
 AMap.service('AMap.Driving');
-AMap.plugin('AMap.Riding');//API的坑坑坑
+//AMap.service('AMap.Riding');
+AMap.plugin('AMap.Riding');

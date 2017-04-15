@@ -5,6 +5,11 @@
 
 /*jQuery部分*/
 $(document).ready(function () {
+    /*检查浏览器*/
+    var userAgent = navigator.userAgent;
+    if(userAgent.indexOf('Chrome') == -1){
+        app.nonChrome = 1;
+    }
 
     /*设置节点列表为拖动排序*/
     var sortableNodes = new Sortable(nodes,{
@@ -161,20 +166,64 @@ $(document).ready(function () {
     $(document).on('mouseover', '[data-toggle="tooltip"]',function () {
         $('[data-toggle="tooltip"]').tooltip();
     });
+
+    /*导出文件*/
+    function outPut() {
+        var dataId = [];
+        var dataString;
+        dataId.push(app.code);
+        dataId.push(app.date);
+        dataId.push(app.city);
+        for(var i = 0; i<app.items.length; i++){
+            dataId.push(app.items[i].id);
+        }
+        dataString = JSON.stringify(dataId);
+        console.log(dataString);
+        var blob = new Blob([dataString], {type: "text/plain;charset=utf-8"});
+        saveAs(blob, "MapOutput.json");
+    }
+    $('#download').on('click', function () {
+        outPut();
+    });
+
+    /*导入文件*/
+    $('#upload').on('change', function (event) {
+        var file = document.getElementById('upload').files[0];//取得input的文件
+        var fileReader = new FileReader();
+        fileReader.readAsText(file);
+        fileReader.onload = function (e) {
+            dataJSON = JSON.parse(this.result);
+            console.log(dataJSON);
+            initPlan(dataJSON);
+        }
+    })
 });
 /*jQuery部分结束*/
 
 //添加marker
 function addMarker(poiResult) {
-    marker = new AMap.Marker({
-        position:poiResult.item.location
-    });
-    marker.setMap(map);
-    marker.on('click', function (e) {
-        openInfoWindow(e, poiResult);
-    });
-    marker.index = app.items.length;
-    app.markers.push(marker);
+    if(poiResult.item) {//通过poiPicker得到的数据
+        marker = new AMap.Marker({
+            position: poiResult.item.location
+        });
+        marker.setMap(map);
+        marker.on('click', function (e) {
+            openInfoWindow(e, poiResult);
+        });
+        marker.index = app.items.length;
+        app.markers.push(marker);
+    }
+    else {
+        marker = new AMap.Marker({//通过search得到的数据
+            position: poiResult.location
+        });
+        marker.setMap(map);
+        marker.on('click', function (e) {
+            openInfoWindow(e, poiResult);
+        });
+        marker.index = app.items.length;
+        app.markers.push(marker);
+    }
 }
 
 //点击marker以后弹出的信息窗对象
@@ -184,7 +233,12 @@ var marker_infoWindow = new AMap.InfoWindow({
 
 //点击marker以后弹出信息
 function openInfoWindow(event, poiResult) {
-    marker_infoWindow.setContent(poiResult.item.name);
+    if(poiResult.item.name){//通过poiPicker得到的数据
+        marker_infoWindow.setContent(poiResult.item.name);
+    }
+    else{//通过search得到的数据
+        marker_infoWindow.setContent(poiResult.name);
+    }
     marker_infoWindow.open(map, event.target.getPosition());
 }
 
@@ -242,6 +296,26 @@ function addInfoWindow(detailResult) {
     });
 }
 
+/*从文件初始化*/
+function initPlan(list) {
+    app.code = list[0];
+    app.date = list[1];
+    app.city = list[2];
+    for(var i = 3; i<list.length; i++){
+        var searchDetail = new AMap.PlaceSearch({
+            city:app.code,
+            extensions:'all'
+        });//根据文件得到的地址编码获取更详细的信息
+        searchDetail.getDetails(list[i], function (status, result) {
+            result.poiList.pois[0].index = app.items.length;
+            result.poiList.pois[0].method = 'Transfer';
+            addMarker(result.poiList.pois[0]);
+            app.items.push(result.poiList.pois[0]);
+            setCircle();
+            setPath();
+        });
 
+    }
+}
 
 

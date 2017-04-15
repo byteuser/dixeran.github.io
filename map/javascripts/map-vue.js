@@ -8,6 +8,7 @@ var app = new Vue({
         city:'',
         code:'',
         date:'',
+        nonChrome: '',
         router: 1,
         items:[
 
