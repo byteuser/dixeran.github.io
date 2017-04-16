@@ -122,7 +122,7 @@ var app = new Vue({
                         container.scrollTop(scrollPre);
                         scrollNow = container.scrollTop();
                         draw();
-                    }, 3000);
+                    }, 5000);
                 }
                 else{
                     context.drawImage(title, 0, 0);

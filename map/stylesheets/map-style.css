@@ -39,3 +39,7 @@ body{
     height: 100%;
 }
 
+.nodeTab-container{
+    overflow: scroll;
+    height: 100%;
+}

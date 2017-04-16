@@ -91,8 +91,11 @@ $(document).ready(function () {
         }
         app.items = cache_nodes;
         app.markers = cache_markers;
-        order.sort();
+        order.sort(sortIndex);
         sortableNodes.sort(order);
+    }
+    function sortIndex(a, b) {
+        return a - b;
     }
 
     /* 引入搜索服务 */
@@ -233,7 +236,7 @@ var marker_infoWindow = new AMap.InfoWindow({
 
 //点击marker以后弹出信息
 function openInfoWindow(event, poiResult) {
-    if(poiResult.item.name){//通过poiPicker得到的数据
+    if(poiResult.item){//通过poiPicker得到的数据
         marker_infoWindow.setContent(poiResult.item.name);
     }
     else{//通过search得到的数据
@@ -301,21 +304,39 @@ function initPlan(list) {
     app.code = list[0];
     app.date = list[1];
     app.city = list[2];
+    var searchDetail = new AMap.PlaceSearch({
+        city:app.code,
+        extensions:'all'
+    });//根据文件得到的地址编码获取更详细的信息
+    var cache = [];
     for(var i = 3; i<list.length; i++){
-        var searchDetail = new AMap.PlaceSearch({
-            city:app.code,
-            extensions:'all'
-        });//根据文件得到的地址编码获取更详细的信息
         searchDetail.getDetails(list[i], function (status, result) {
-            result.poiList.pois[0].index = app.items.length;
-            result.poiList.pois[0].method = 'Transfer';
-            addMarker(result.poiList.pois[0]);
-            app.items.push(result.poiList.pois[0]);
-            setCircle();
-            setPath();
+            cache.push(result.poiList.pois[0]);
+            console.log(result.poiList.pois[0].id);
         });
-
     }
+    var message = new $.zui.Messager('正在导入', {
+        type: 'info',
+        placement: 'center'
+    });
+    message.show();
+    /*搜索详细信息的返回不按顺序，所以要得到所有结果以后进行一次重整*/
+    setTimeout(function () {
+        for(var t = 0; t<list.length; t++){
+            for(var k = 0; k<cache.length; k++){
+                if(list[t] == cache[k].id){
+                    cache[k].index = app.items.length;
+                    cache[k].method = 'Transfer';
+                    addMarker(cache[k]);
+                    app.items.push(cache[k]);
+                    setCircle();
+                    setPath();
+                    break;
+                }
+            }
+        }
+        message.hide();
+    }, 2000);
 }
 
 
