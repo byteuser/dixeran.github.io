@@ -65,4 +65,4 @@ AMap.service('AMap.Transfer');
 AMap.service('AMap.Walking');
 AMap.service('AMap.Driving');
 //AMap.service('AMap.Riding');
-AMap.plugin('AMap.Riding');
+//AMap.plugin('AMap.Riding');
