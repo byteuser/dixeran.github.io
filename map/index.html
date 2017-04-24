@@ -20,6 +20,7 @@
             <li v-bind:class="{ active: router == 1 }"><a href="#" v-on:click="router = 1">节点</a></li>
             <li v-bind:class="{ active: router == 2 }"><a href="#" v-on:click="router = 2">路径</a></li>
             <li v-bind:class="{ active: router == 3 }"><a href="#" v-on:click="router = 3">关于</a></li>
+            <li><a href="#" data-toggle="modal" data-target="#tableList" data-position="50">表单</a></li>
             <li><a href="#" data-toggle="modal" data-target="#file">导入/导出</a></li>
         </ul>
 
@@ -144,6 +145,45 @@
             </div>
         </div>
         </transition>
+
+        <!-- 送签单modal -->
+        <div class="modal fade" id="tableList">
+            <div class="modal-dialog modal-lg scrollbar-hover">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span class="icon-remove"></span></button>
+                    <h3>日程表</h3>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-hover">
+                        <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>景点</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <template v-for="item in items">
+                            <tr>
+                                <td>{{item.index + 1}}</td>
+                                <td>
+                                    <p><h4>{{item.name}}</h4></p>
+                                    <div>
+                                        <span class="label label-primary">{{item.address}}</span>
+                                        <span class="label label-info">{{item.type}}</span>
+                                        <div v-if="item.deep_type == 'SCENIC' ">
+                                            <span class="label label-circle" v-if="item.scenic.rating">评分：{{item.scenic.rating}}</span>
+                                            <p>门票：{{ item.scenic.price}} RMB</p>
+                                            <p>营业时间：{{item.scenic.opentime}}</p>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </template>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- 长截图生成画布 -->
@@ -172,6 +212,8 @@
             </div>
         </div>
     </div>
+
+
 
     <script src="javascripts/Sortable.min.js"></script>
     <script src="//cdn.bootcss.com/vue/2.2.6/vue.min.js"></script>

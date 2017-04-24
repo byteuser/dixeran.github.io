@@ -43,3 +43,7 @@ body{
     overflow: scroll;
     height: 100%;
 }
+
+.modal-backdrop{
+    display: none !important;
+}

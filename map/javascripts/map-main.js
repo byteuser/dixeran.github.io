@@ -13,9 +13,6 @@ var placeSearchCity;
 map.plugin('AMap.Geolocation',function () {
     geolocation = new AMap.Geolocation({
         timeout:3000,
-        showButton:true,
-        buttonPosition:'RB',
-        buttonOffset: new AMap.Pixel(10, 20),
         showCircle:false
     });
     map.addControl(geolocation);
