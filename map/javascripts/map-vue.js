@@ -132,6 +132,13 @@ var app = new Vue({
                     }, 500);
                 }
             }
+        },
+        collapseIn:function () {
+            for(var i = 0;i<app.items.length-1; i++){
+                var target = $('#path' + (i+1));
+                target.addClass("in");
+
+            }
         }
     }
 });

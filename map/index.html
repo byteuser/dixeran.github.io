@@ -19,9 +19,9 @@
         <ul class="nav nav-secondary">
             <li v-bind:class="{ active: router == 1 }"><a href="#" v-on:click="router = 1">节点</a></li>
             <li v-bind:class="{ active: router == 2 }"><a href="#" v-on:click="router = 2">路径</a></li>
+            <li v-bind:class="{ active: router == 3 }"><a href="#" v-on:click="router = 3">关于</a></li>
             <li><a href="#" data-toggle="modal" data-target="#tableList" data-position="50">表单</a></li>
             <li><a href="#" data-toggle="modal" data-target="#file">导入/导出</a></li>
-            <li v-bind:class="{ active: router == 3 }"><a href="#" v-on:click="router = 3">关于</a></li>
         </ul>
 
         <!-- 浏览器警示 -->
@@ -92,7 +92,10 @@
                 <p>没有节点无法进行算路噢</p>
             </div>
 
-            <button class="btn btn-primary btn-block" v-if=" items.length > 1" v-on:click="getPath">计算路线</button>
+            <div class="btn-group" v-if=" items.length > 1" style="display: block">
+                <button class="btn btn-primary" v-on:click="getPath" style="width: 50%">计算路线</button>
+                <button class="btn" v-on:click="collapseIn" style="width: 50%">展开全部</button>
+            </div>
             <button v-if=" items.length > 1" class="btn btn-info btn-block" v-on:click="renderMap"
                     data-toggle="tooltip" data-placement="left" title="先在右侧面板中展开需要截图的内容，点击“生成长截图”之后，请在一段时间内不要操作右侧面板，
                     长截图生成完毕将在新标签页中打开，届时
@@ -113,9 +116,11 @@
                                 <input type="radio" value="Walking" v-bind:name="'pathMethod' + n" v-model="items[n-1].method">步行
                             </label>
 
+                            <!--
                             <label class="radio-inline">
                                 <input type="radio" value="Riding" v-bind:name="'pathMethod' + n" v-model="items[n-1].method">骑行
                             </label>
+                            -->
 
                             <label class="radio-inline">
                                 <input type="radio" value="Driving" v-bind:name="'pathMethod' + n" v-model="items[n-1].method">驾车
@@ -172,8 +177,8 @@
                                         <span class="label label-info">{{item.type}}</span>
                                         <div v-if="item.deep_type == 'SCENIC' ">
                                             <span class="label label-circle" v-if="item.scenic.rating">评分：{{item.scenic.rating}}</span>
-                                            <p>门票：{{ item.scenic.price}} RMB</p>
-                                            <p>营业时间：{{item.scenic.opentime}}</p>
+                                            <p v-if="item.scenic.price">门票：{{ item.scenic.price}} RMB</p>
+                                            <p v-if="item.scenic.opentime">营业时间：{{item.scenic.opentime}}</p>
                                         </div>
                                     </div>
                                 </td>
