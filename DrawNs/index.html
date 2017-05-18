@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="rec/zui.css">
+    <link rel="stylesheet" href="rec/Style.css">
+    <title>Draw N-S</title>
+</head>
+<body>
+<div id="root">
+    <div id="MainCanvas" class="card" v-bind:style="{ width: totalWidth + 'px' }">
+        <div class="card-content">
+            <table class="table table-hover" v-on:click="switchState">
+                <tr>
+                    <td><input type="text" placeholder="First Command"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div id="ControlTab">
+        <div class="panel">
+            <div class="panel-heading">
+                <h4>控制台</h4>
+            </div>
+            <div class="panel-body">
+                <div class="btn-group btn-group-vertical">
+                    <input type="number" class="form-control" v-model="totalWidth">
+                    <button class="btn btn-block" v-on:click="addSequential">
+                        <span class="icon-plus"></span>
+                        顺序语句
+                    </button>
+                    <button class="btn btn-block" v-on:click="addAlternative">
+                        <span class="icon-node"></span>
+                        选择语句
+                    </button>
+                    <button class="btn btn-block" v-on:click="addLoop">
+                        <span class="icon-undo"></span>
+                        循环语句
+                    </button>
+                    <button class="btn btn-block" v-on:click="PtrSc">
+                        <span class="icon-camera"></span>
+                        生成长截图
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <canvas id="image"></canvas>
+
+</div>
+<script src="rec/jquery-3.1.1.min.js"></script>
+<script src="rec/zui.js"></script>
+<script src="rec/vue.js"></script>
+<script src="rec/script.js"></script>
+<script src="rec/html2canvas.min.js"></script>
+</body>
+</html>

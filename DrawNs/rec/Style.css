@@ -1,0 +1,38 @@
+table {
+    text-align: center;
+}
+
+body{
+    background-color: #f3f3f3;
+}
+
+.card-content{
+    padding:0 !important;
+    background-color: white;
+}
+
+#MainCanvas{
+    margin: 0 auto;
+}
+
+#ControlTab{
+    position: fixed;
+    top: 10%;
+    right: 0;
+}
+
+input{
+    border: 0;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.ifSentence{
+    background-image: url("if.svg");
+    background-repeat:no-repeat;
+    background-size:100%;
+}
+
+.while{
+    border-bottom-width: 0 !important;
+}
