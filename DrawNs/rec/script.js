@@ -174,6 +174,7 @@ var app = new Vue({
             var viewHeight = $(window).height();
             var scrollPre = 0;
             var scrollNow = 0;
+            var currentHeight = container.height();
             var containerNt = document.getElementById('MainCanvas');
             draw();
             /*绘图*/
@@ -183,11 +184,12 @@ var app = new Vue({
                     document.body.appendChild(canvas);
                 });
 
-                if((scrollPre - scrollNow) < viewHeight){
+                if(currentHeight >= 0){
                     setTimeout(function () {
                         scrollPre += viewHeight;
                         $(window).scrollTop(scrollPre);
                         scrollNow = $(window).scrollTop();
+                        currentHeight -= viewHeight;
                         draw();
                     }, 5000);
                 }
