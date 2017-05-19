@@ -44,12 +44,32 @@
                         <span class="icon-camera"></span>
                         生成长截图（实验性）
                     </button>
+                    <button class="btn btn-block btn-info" data-toggle="modal" data-target="#about">
+                        <span class="icon-info"></span>
+                        关于
+                    </button>
                 </div>
             </div>
         </div>
     </div>
 
     <canvas id="image"></canvas>
+
+    <div class="modal fade" id="about">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">关闭</span></button>
+                    <h4 class="modal-title">关于</h4>
+                </div>
+                <div class="modal-body">
+                    <p>画N-S图。点击一个方格，选中后可添加三种预置的类型。</p>
+                    <p>使用MIT License，感谢以下开源库<code>jQuery;zui;vue2.x;html2Canvas</code></p>
+                    <p>Made by Dixeran</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </div>
 <script src="rec/jquery-3.1.1.min.js"></script>
