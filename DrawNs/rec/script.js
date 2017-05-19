@@ -223,7 +223,8 @@ $(document).ready(function () {
         $('#ControlTab').css({
             "position":"inherit",
             "margin":"0 auto",
-            "width":"480px"
-        })
+            "width":$(window).width()
+        });
+        app.totalWidth = $(window).width();
     }
 });
